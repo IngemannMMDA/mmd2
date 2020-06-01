@@ -1,0 +1,76 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+
+/* hero styling startpoint */
+
+/* Hero styling endpoint */
+
+
+
+
+/* Media Queries */
+
+#vejrAPI {
+ background-color: rgb(255, 255, 255);
+}
+
+
+
+.temp {
+	display: inline-block;
+	float: left;
+	width: 60px;
+}
+
+.temp p {
+	font-size: 1.3rem;
+}
+
+.tempIcon {
+	display: inline-block;
+	float: left;
+	width: 50px
+}
+
+.tempIcon img {
+	margin-top: -14px;
+}
+
+
+#hero-section {
+height: 700px;
+background-color: lightcoral;
+}
+/*
+#hero-section .hero-container {
+height: 700px;
+width: 100%;
+}
+
+#hero-section .hero-container img {
+max-height: 100%;
+max-width: 100%;
+display: block;
+}
+
+*/
+
+#hero-section .hero-container {
+	height: 715px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+	background-image: url('/assets/images/Skovtur-1.jpg');
+}
+
+#hero-section h1 {
+		color: white;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+	 
+}
