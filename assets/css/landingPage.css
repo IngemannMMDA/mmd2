@@ -74,3 +74,22 @@ display: block;
 		transform: translate(-50%, -50%);
 	 
 }
+
+#intro-section {
+	height: 200px;
+}
+#oplevelser-section {
+	height: 200px;
+}
+
+
+#maps-section {
+	height: 500px;
+	background-color: #D85448;
+}
+
+#maps-section #map {
+	top: 50px;
+	height: 400px;  
+	width: 100%;
+  }

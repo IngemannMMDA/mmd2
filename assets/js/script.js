@@ -17,6 +17,7 @@ function loadPage() {
 
 
     getData(); // henter openweathermap.org DATA
+    initMap()
 }
 
 
@@ -63,3 +64,51 @@ function renderWeather(data) { // starter Render funktionen. Alt bliver renderet
     `;
 // Math.round() Runder tallet op.
 }
+
+function initMap() {
+    
+      var mapLocation = {lat: 54.932620, lng: 11.483123}; // The location
+      
+      var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 11.60, // Hvor meget kortet er zoomet ind
+          center: mapLocation,
+          draggable: false,
+          disableDefaultUI: true,
+          // mapTypeId: 'satellite'
+          styles: [ // Styling start
+              
+                  {
+                    "featureType": "landscape.natural",
+                    "elementType": "geometry.fill",
+                    "stylers": [
+                      {
+                        "color": "#d85448"
+                      }
+                    ]
+                  },
+                  {
+                    "featureType": "water",
+                    "elementType": "geometry.fill",
+                    "stylers": [
+                      {
+                        "color": "#ffffff"
+                      }
+                    ]
+                  }
+                ] // Styling slut
+          
+      });
+      var marker = new google.maps.Marker({
+          position: mapLocation,
+          map: map
+          //icon: customIcon    hvis man vil have sit eget icon
+          
+      })
+      //var customIcon = {
+      //	url: '.SVG/cloudy.svg',
+      // scaledSize: new google.maps.Size(90,90),
+      // origin: new google.maps.Point(0,0),
+      // anker: new google.maps.Point(20,20)
+      //}
+  
+  }
