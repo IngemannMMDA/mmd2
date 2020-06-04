@@ -18,6 +18,9 @@ function loadPage() {
 
     getData(); // henter openweathermap.org DATA
     initMap()
+    // Showcase sidernes map scroll
+
+
 }
 
 
@@ -141,3 +144,18 @@ function initMap() {
       //}
   
   }
+
+  // window.onscroll = function() {stickyFunction()};
+
+  // var myMap = document.getElementById("mapSticky");
+  // var sticky = myMap.offsetTop;
+  
+  // function stickyFunction() {
+  //   if (window.pageYOffset > sticky) {
+  //     myMap.classList.add("sticky");
+  //     console.log("sticky on");
+  //   } else {
+  //     myMap.classList.remove("sticky");
+  //     console.log("sticky off");
+  //   }
+  // }
