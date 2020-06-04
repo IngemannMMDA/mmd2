@@ -37,25 +37,26 @@ p {
 /* Links */
 a {
 	text-decoration: none;
-	color: black;
+	color: #d85448;
 }
 
 .line {
     /* The CURRENT PAGE has this Class */
-    text-decoration: underline solid #000000;
+    text-decoration: underline solid #d85448;
     text-decoration-thickness: 2px;
 }
-
+a:visited {
+    color: #d85448;
+}
 a:hover {
 	text-decoration: none;
-	text-decoration: underline solid #dd0c0c;
-	text-decoration-thickness: 2px;
-    color: red;
+
+    color: black;
 }
 
-a:visited {
-    color: #212121;
-}
+/*-webkit-filter: saturate(8); */
+/* filter: saturate(8); */
+
 
 /* Main grid startpoint */
 
