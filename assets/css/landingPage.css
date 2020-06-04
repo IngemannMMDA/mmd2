@@ -1,23 +1,10 @@
 @charset "utf-8";
 /* CSS Document */
 
-
-
-
-/* hero styling startpoint */
-
-/* Hero styling endpoint */
-
-
-
-
-/* Media Queries */
-
 #vejrAPI {
- background-color: rgb(255, 255, 255);
+ background-color:#feffe9;
+ margin: 0 0 0 10vw;
 }
-
-
 
 .temp {
 	display: inline-block;
@@ -39,6 +26,7 @@
 	margin-top: -14px;
 }
 
+/* Hero Section startpoint */
 
 #hero-section {
 height: 700px;
@@ -63,33 +51,170 @@ display: block;
     overflow: hidden;
     background-size: cover;
     background-position: center;
-	background-image: url('/assets/images/Skovtur-1.jpg');
+	background-image: url('/assets/images/Beach-1.jpg');
 }
 
 #hero-section h1 {
-		color: white;
-		position: absolute;
-		left: 50%;
-		top: 50%;
-		transform: translate(-50%, -50%);
-	 
+	color: white;
+	position: absolute;
+	left: 50%;
+	top: 60%;
+	transform: translate(-50%, -50%);
+	font-size: 4vw;
+	font-weight: lighter;
 }
 
-#intro-section {
-	height: 200px;
+/* Hero Section endpoint */
+
+/* Intro Section startpoint */
+
+#intro-section-flex {
+	width: 100%;
+	height: auto;
+	display: flex;
 }
+
+.intro-logo {
+	display: block;
+	background-image: url(../images/logoPlaceholder.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 15vw;
+	width: 50%;
+	height: auto;
+}
+
+.intro-text {
+	display: block;
+	width: 50%;
+	padding: 5vw;
+}
+
+.intro-text h1 {
+	font-size: 35px;
+	font-weight: lighter;
+	margin: 0 0 20px 0;
+}
+
+.intro-text p {
+	font-size: 22px;
+	margin: 15px 0;
+}
+
+.runde-ikoner {
+	margin: 0 0 80px 0;
+}
+
+.flex-ikoner {
+	display: flex;
+	flex-wrap: nowrap;
+	width: 100%;
+	height: auto;
+	justify-content: center;
+}
+
+.intro-ikoner {
+	margin: 0 20px;
+	text-align: center;
+}
+
+.intro-ikoner img {
+	background-color: #ee5541;
+	width: 100px;
+	margin: 10px;
+	padding: 5px;
+	text-align: center;
+	border-radius: 50px;
+}
+
+.intro-ikoner p {
+	color: #EE5541;
+}
+
+/* Intro Section endpoint */
+
+/* Oplevelser Section startpoint */
+
 #oplevelser-section {
-	height: 200px;
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	padding: 2.5vw 30vw;
+	background-color: #8b9f43;
+	text-align: center;
+	color: #fff;
 }
 
+#oplevelser-section h1 {
+	font-size: 30px;
+	font-weight: 100;
+}
+
+#oplevelser-section p {
+	margin: 25px 0 25px 0;
+	font-size: 20px;
+	font-weight: 100;
+}
+
+#oplevelser-section a {
+	background-color: #ee5541;
+	border-radius: 5px;
+	padding: 5px;
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#oplevelser-section a:hover {
+	background-color: #ff7f6f;
+}
+
+.flex-billeder {
+	display: flex;
+	flex-wrap: nowrap;
+	width: auto;
+	height: auto;
+	justify-content: center;
+}
+
+.billeder img {
+	width: 350px;
+	height: 280px;
+	margin: 50px 10px 75px 10px;
+}
+
+/* Oplevelser Section endpoint */
+
+/* Maps Section startpoint */
 
 #maps-section {
-	height: 500px;
-	background-color: #D85448;
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	background-color: #feffe9;
+	text-align: center;
+	color: #000;
+}
+
+#maps-section h1 {
+	margin: 2.5vw 0 0 0;
+	font-size: 30px;
+	font-weight: 100;
+}
+
+#maps-section p {
+	margin: 25px 0 0 0;
+	font-size: 20px;
+	font-weight: 100;
 }
 
 #maps-section #map {
 	top: 50px;
 	height: 400px;  
 	width: 100%;
+	margin: 0 0 50px;
   }
+
+  /* Maps Section endpoint */
+
+  /* Media Queries below - Tilpasning til Mobil- og Tabeletversion */
