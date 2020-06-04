@@ -64,7 +64,7 @@ a:hover {
 	display: grid;
 	grid-column-gap: auto;
 	/*grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;*/
-	grid-template-columns: 6,8% 6,8% 6,8% 6,8% 6,8% 6,8% 6,8% 6,8% 6,8% 6,8% 6,8% 6,8% 6,8% 6,8%;
+	grid-template-columns: 6,5% 6,5% 6,5% 6,5% 6,5% 6,5% 6,5% 6,5% 6,5% 6,5% 6,5% 6,5% 6,5% 6,5%;
 	grid-column-gap: auto;
 }
 
