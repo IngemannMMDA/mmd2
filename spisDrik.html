@@ -64,31 +64,50 @@
     </section>
     <section id="menu-section">
         <div class="menu-container grid">
-            <div class="menu-grid-item1 menu-grid-items">
-                <div class="menuOptions fejø">
+            <div class="menu-grid-item1 menu-grid-items overflow">
+                <div class="zoom menuOptions fejø">
                     <img src="/assets/images/denGamleMølle.jpg">
                     <h3>Toppen</h3>
                     <p class="small-font">Overnatning i rummelige værelser på 1.sal med adgang til køkken og bad, samt
                         stor have</p>
                 </div>
-                <div class="menuOptions femø">
+                <div class="zoom menuOptions femø">
                     <img src="/assets/images/Skovtur-13.jpg">
                     <h3>Toppen</h3>
                     <p class="small-font">Overnatning i rummelige værelser på 1.sal med adgang til køkken og bad, samt
                         stor have</p>
                 </div>
-                <div class="menuOptions askø">
+                <div class="zoom menuOptions askø">
                     <img src="/assets/images/kayaks.jpg">
                     <h3>Toppen</h3>
                     <p class="small-font">Overnatning i rummelige værelser på 1.sal med adgang til køkken og bad, samt
                         stor have</p>
                 </div>
-                <div class="menuOptions fejø">
+                <div class="zoom menuOptions fejø">
                     <img src="/assets/images/Sunset-Assens-1.jpg">
                     <h3>Toppen</h3>
                     <p class="small-font">Overnatning i rummelige værelser på 1.sal med adgang til køkken og bad, samt
                         stor have</p>
                 </div>
+                <div class="zoom menuOptions">
+                    <img src="/assets/images/Sunset-Assens-1.jpg">
+                    <h3>Toppen</h3>
+                    <p class="small-font">Overnatning i rummelige værelser på 1.sal med adgang til køkken og bad, samt
+                        stor have</p>
+                </div>
+                <div class="zoom menuOptions">
+                    <img src="/assets/images/Sunset-Assens-1.jpg">
+                    <h3>Toppen</h3>
+                    <p class="small-font">Overnatning i rummelige værelser på 1.sal med adgang til køkken og bad, samt
+                        stor have</p>
+                </div>
+                <div class="zoom menuOptions">
+                    <img src="/assets/images/Sunset-Assens-1.jpg">
+                    <h3>Toppen</h3>
+                    <p class="small-font">Overnatning i rummelige værelser på 1.sal med adgang til køkken og bad, samt
+                        stor have</p>
+                </div>
+
             </div>
             <div class="menu-grid-item2 menu-grid-items">
                 <div id="mapSticky">
@@ -148,26 +167,7 @@ for (var i = 0; i < btns.length; i++) {
     current[0].className = current[0].className.replace(" active", "");
     this.className += " active";
   });
-}
-        // scroll sticky
-        window.onscroll = function () { stickyFunction() };
-
-        var myMap = document.getElementById("mapSticky");
-        var sticky = myMap.offsetTop;
-
-        function stickyFunction() {
-            if (window.pageYOffset > sticky && window.pageYOffset <= sticky + 500) {
-                myMap.classList.add("sticky");
-                console.log("sticky on");
-            }
-            else {
-                myMap.classList.remove("sticky");
-                console.log("sticky off");
-            }
-        }
-
-        // Filter
-        
+}  
     </script>
     
 
