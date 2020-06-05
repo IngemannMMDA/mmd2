@@ -65,7 +65,8 @@ color: #2F361F;
        /* background-color: lawngreen; */
     }
     .menu-container .menu-grid-item2 {
-        grid-column: 6/12;
+        grid-column: 6/13;
+        
        /* background-color: red; */
     }
    .menuOptions{
@@ -122,7 +123,7 @@ color: #2F361F;
         background-color: blue;
     }
 
-    /* --- STIKY MAP CLASS START! ---*/
+    /* --- STICKY MAP CLASS START! ---*/
 
     .sticky {
             position: fixed;
@@ -134,7 +135,7 @@ color: #2F361F;
             
     }
 
-    /* --- STIKY MAP CLASS SLUT! ---*/
+    /* --- STICKY MAP CLASS SLUT! ---*/
 #info-section {
     width: 100%;
     height: 710px;
@@ -176,3 +177,73 @@ color: #2F361F;
 .intro-ikoner p {
 	color: #EE5541;
 }
+
+/* media queries */
+@media screen and (max-width: 1450px) {
+    .menu-container .menu-grid-item2 {
+        grid-column: 7/14;
+        
+    
+    }
+    #title-section {
+        height: 621px;
+    }
+    .title-grid-item1 {
+        grid-column: 2/4;
+    }
+    .title-grid-item2 {
+        grid-column: 7/13;
+    }
+
+  }
+
+
+  @media screen and (max-width: 1050px) {
+    .menu-container .menu-grid-item1 {
+        grid-column: 2/4;
+        
+    
+    }
+    .menu-container .menu-grid-item2 {
+        grid-column: 8/15;
+        
+    
+    }
+    .menu-container .menu-map{
+        height: 400px;
+        width: 50.5vw;
+        background-color: blue;
+    }
+
+    .title-grid-item1 {
+        grid-column: 1/2;
+    }
+    .title-grid-item2 {
+        grid-column: 7/15;
+    }
+    .flex-ikoner {
+        flex-wrap: wrap;
+        
+    }
+  }
+
+  @media screen and (max-width: 750px) {
+    .menu-container .menu-grid-item1 {
+        grid-column: 2/15;
+        
+    
+    }
+    .menu-container .menu-grid-item2 {
+        display: none;
+        
+    }
+    
+
+    .title-grid-item1 {
+        display: none;
+    }
+    .title-grid-item2 {
+        grid-column: 2/15;
+    }
+  }
+
