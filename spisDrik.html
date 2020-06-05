@@ -65,43 +65,39 @@
     <section id="menu-section">
         <div class="menu-container grid">
             <div class="menu-grid-item1 menu-grid-items overflow">
-                <div class="zoom menuOptions fejø">
+                <div class="zoom menuOptions fejø show">
                     <img src="/assets/images/denGamleMølle.jpg">
-                    <h3>Toppen</h3>
-                    <p class="small-font">Overnatning i rummelige værelser på 1.sal med adgang til køkken og bad, samt
-                        stor have</p>
+                    <h3>Fejø Mølle</h3>
+                    <p class="small-font">Kom og mød pigerne i den gamle mølle. Her kan du købe kaffe og is, samt blive klogere på møllens historie.</p>
                 </div>
-                <div class="zoom menuOptions femø">
+                <div class="zoom menuOptions femø show">
                     <img src="/assets/images/Skovtur-13.jpg">
-                    <h3>Toppen</h3>
-                    <p class="small-font">Overnatning i rummelige værelser på 1.sal med adgang til køkken og bad, samt
-                        stor have</p>
+                    <h3>Lerbakkevej</h3>
+                    <p class="small-font">Kom ud på eventyr og opdag Femø. </p>
                 </div>
-                <div class="zoom menuOptions askø">
+                <div class="zoom menuOptions askø show">
                     <img src="/assets/images/kayaks.jpg">
-                    <h3>Toppen</h3>
-                    <p class="small-font">Overnatning i rummelige værelser på 1.sal med adgang til køkken og bad, samt
-                        stor have</p>
+                    <h3>Fejø kajakhus</h3>
+                    <p class="small-font">Kajak udlejning, havkajakroning og gode oplevelser for familien.</p>
                 </div>
-                <div class="zoom menuOptions fejø">
+                <div class="zoom menuOptions fejø show">
+                    <img src="/assets/images/Sunset-Assens-1.jpg">
+                    <h3>Askø strand</h3>
+                    <p class="small-font">Stranden ligger på nordvestsiden af Askø, på stranden er der en ny badebro.</p>
+                </div>
+                <div class="zoom menuOptions show">
                     <img src="/assets/images/Sunset-Assens-1.jpg">
                     <h3>Toppen</h3>
                     <p class="small-font">Overnatning i rummelige værelser på 1.sal med adgang til køkken og bad, samt
                         stor have</p>
                 </div>
-                <div class="zoom menuOptions">
+                <div class="zoom menuOptions show">
                     <img src="/assets/images/Sunset-Assens-1.jpg">
                     <h3>Toppen</h3>
                     <p class="small-font">Overnatning i rummelige værelser på 1.sal med adgang til køkken og bad, samt
                         stor have</p>
                 </div>
-                <div class="zoom menuOptions">
-                    <img src="/assets/images/Sunset-Assens-1.jpg">
-                    <h3>Toppen</h3>
-                    <p class="small-font">Overnatning i rummelige værelser på 1.sal med adgang til køkken og bad, samt
-                        stor have</p>
-                </div>
-                <div class="zoom menuOptions">
+                <div class="zoom menuOptions show">
                     <img src="/assets/images/Sunset-Assens-1.jpg">
                     <h3>Toppen</h3>
                     <p class="small-font">Overnatning i rummelige værelser på 1.sal med adgang til køkken og bad, samt
@@ -125,51 +121,6 @@
             </div>
         </div>
     </section>
-    <script>
-        filterSelection("alle")
-function filterSelection(c) {
-  var x, i;
-  x = document.getElementsByClassName("menuOptions");
-  if (c == "alle") c = "";
-  for (i = 0; i < x.length; i++) {
-    removeClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) addClass(x[i], "show");
-  }
-}
-
-function addClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
-  }
-}
-
-function removeClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);     
-    }
-  }
-  element.className = arr1.join(" ");
-}
-
-// Add active class to the current button (highlight it)
-var btnBox = document.getElementById("menu-filter-Id");
-var btns = btnBox.getElementsByClassName("filter-btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function(){
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
-}  
-    </script>
-    
 
     </section>
     <section class="runde-ikoner">
