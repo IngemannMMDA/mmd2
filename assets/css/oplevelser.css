@@ -1,7 +1,3 @@
 header .hero-all-container {
-    height: 404px;
-        overflow: hidden;
-        background-size: cover;
-        background-position: center;
         background-image: url('/assets/images/bicycles.jpg');
 }
