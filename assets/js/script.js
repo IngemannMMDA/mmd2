@@ -161,20 +161,3 @@ function initMap() {
   // }
   
 
-  //--- get elements for easier naming in the code
-	let stopPoint = document.querySelector('.stopPoint');
-	
-  //---
-    window.onscroll = function() {onScrollChecks()};
-  
-  function onScrollChecks() {
-    if (window.pageYOffset >= stopPoint.offsetTop) {
-  
-      document.querySelector('#mapSticky').classList.remove("sticky");
-      console.log("sticky off 2");
-    } 
-    else {
-      document.querySelector('#mapSticky').classList.add("sticky");
-      console.log("sticky on 2");
-    }
-  }
