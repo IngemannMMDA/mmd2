@@ -1,3 +1,67 @@
 header .hero-all-container {
         background-image: url('/assets/images/bicycles.jpg');
 }
+
+.info-grid-item1 {
+        grid-column: 4/12;
+        grid-row: 1/2;
+        height: 300px;
+}
+.info-grid-item2 {
+        grid-column: 6/10;
+        grid-row: 2/3;
+}
+
+#info-section {
+        display: block;
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	padding: 2.5vw 30vw;
+	background-color: #8b9f43;
+	text-align: center;
+	color: #fff; 
+}
+
+#info-section h2 {
+        font-size: 30px;
+        font-weight: 100;
+}
+
+#info-section p {
+        margin: 25px 0 25px 0;
+        font-size: 20px;
+        font-weight: 100;
+}
+
+#info-section title-line {
+        padding-top: 5px;
+}
+
+#info-section a {
+        background-color: #ee5541;
+	border-radius: 5px;
+	padding: 5px;
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold; 
+}
+
+#info-section a:hover {
+        background-color: #ff7f6f;
+}
+
+.flex {
+        display: flex;
+        flex-wrap: nowrap;
+        width: auto;
+	height: auto;
+	justify-content: center;
+}
+
+.flex .billeder img {
+	width: 350px;
+	height: 280px;
+        margin: 50px 10px 75px 10px;
+        
+}
