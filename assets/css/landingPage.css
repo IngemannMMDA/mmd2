@@ -289,6 +289,14 @@ display: block;
 	background-color: #ff7f6f;
 }
 
+
+/* INSTAGRAM-------------- */
+
+#instagram-testerbox {
+    height: 200px;
+    width: 200px;
+}
+
   /* Transport Section endpoint */
 
   /* Media Queries below - Tilpasning til Mobil- og Tabeletversion */
