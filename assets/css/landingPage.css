@@ -290,14 +290,49 @@ display: block;
 	background-color: #ff7f6f;
 }
 
+/* Transport Section endpoint */
 
-/* INSTAGRAM-------------- */
-
+/* INSTAGRAM styling startpoint*/
 #instagram-testerbox {
-    height: 200px;
-    width: 200px;
+    height: 350px;
+	width: 350px;
+	margin: 0 5vw 0 0;
+
+}
+/* INSTAGRAM styling endpoint */
+
+/* Følg Os Section startpoint */
+
+.folg-os-section {
+	display: block;
+	width: 100%;
+	height: auto;
 }
 
-  /* Transport Section endpoint */
+.folg-os-h1 {
+	padding: 2.5vw 0 2.5vw 0;
+	font-size: 30px;
+	font-weight: 100;
+	text-align: center;
+}
 
-  /* Media Queries below - Tilpasning til Mobil- og Tabeletversion */
+.flex-folg-os {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.folg-os-text {
+	width: 50%;
+	margin: 5vw;
+}
+
+.folg-os-text p {
+	padding: 0 0 0 17vw;
+	line-height: 5vh;
+	font-size: 20px;
+	font-weight: 100;
+}
+
+/* Følg Os Section endpoint */
+
+/* Media Queries below - Tilpasning til Mobil- og Tabeletversion */
