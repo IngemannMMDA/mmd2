@@ -2,7 +2,9 @@
 /* CSS Document */
 
 
-
+header .hero-all-container {
+    background-image: url('/assets/images/bicycles.jpg');
+}
 
 /* hero styling startpoint */
 
