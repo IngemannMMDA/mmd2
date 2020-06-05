@@ -57,7 +57,7 @@ color: #2F361F;
     }
 
     .menu-container {
-        
+        height: 1032px;
         /*background-color: black;*/
     }
     .menu-container .menu-grid-item1 {
@@ -68,20 +68,25 @@ color: #2F361F;
         grid-column: 6/12;
        /* background-color: red; */
     }
-    .menu-container .menu-option{
+   .menuOptions{
         height: 258px;
         width: 270px;
         margin: 0 auto;
         background-color: white;
+        display: none;
     }
 
-    .menu-container .menu-option img{
+    .show {
+        display: block;
+      }
+
+    .menu-container .menuOptions img{
         height: 135px;
         width: 100%;
         
     }
 
-    .menu-container .menu-option p{
+    .menu-container .menuOptions p{
         
     }
     .menu-container .menu-filter{
@@ -95,11 +100,21 @@ color: #2F361F;
         border: 1px solid #707070;
         margin: 0 5px 13px 0;
         font-size: 1.75rem;
-        padding-top: 18px;
+        padding-top: 5px;
         text-align: center;
         color: #2F361F;
         
     }
+
+    .menu-container .filter-btn:hover {
+        background-color: #ddd;
+      }
+      
+      /* Add a dark background to the active button */
+      .menu-container .filter-btn.active {
+        background-color: #666;
+        color: white;
+      }
 
     .menu-container .menu-map{
         height: 400px;
