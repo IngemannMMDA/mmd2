@@ -12,8 +12,173 @@
 </head>
 
 <body>
+    <header>
+        <div class="nav-container grid">
 
-    <p>Hello world! this is a p tag</p>
+            <div class="nav-grid-item1 nav-grid-items">
+                <a href="index.html"><img src="/assets/images/logoPlaceholder.png"></a>
+            </div>
+
+            <div class="nav-grid-item2 nav-grid-items">
+                <a href="transport.html">Transport</a>
+            </div>
+
+            <div class="nav-grid-item3 nav-grid-items">
+                <a href="oplevelser.html">Oplevelser</a>
+            </div>
+
+            <div class="nav-grid-item4 nav-grid-items">
+                <a href="spisDrik.html">Spisesteder</a>
+            </div>
+
+            <div class="nav-grid-item5 nav-grid-items line">
+                <a href="overnatning.html">Overnatning</a>
+            </div>
+
+            <div id="vejrAPI" class="nav-grid-item6 nav-grid-items clearfix">
+
+            </div>
+
+        </div>
+        <div class="hero-all-container">
+            <img src="assets/images/">
+
+        </div>
+    </header>
+
+    <section id="oplevelser-title-section">
+        <div class="showcase-title-container grid">
+
+            <div class="title-grid-item1 title-grid-items">
+                <img src="/assets/images/logoPlaceholder.png">
+            </div>
+
+            <div class="title-grid-item2 title-grid-items">
+                <h2>Overnatning</h2>
+                <div class="title-line"></div>
+                <p>En bred vifte af overnatningsmuligheder er tilgængelige på alle øerne, uanset om du leder 
+                    efter enkeltstående indkvartering som hos Askø Mejeri eller om du fortrækker at bo i et 
+                    hyggeligt minihus på Fejøs vinmark, så er mulighederne mange.</p><br>
+                    <p>Nedenstående liste viser et udvalg af overnatningsmuligheder.</p>
+            </div>
+        </div>
+    </section>
+    <section id="oplevelser-menu">
+        <div class="menu-container grid">
+            <div class="menu-grid-item1 menu-grid-items">
+                <div class="menu-option">
+                    <img src="/assets/images/Skovtur-2.jpg">
+                    <h3>Toppen</h3>
+                    <p class="small-font">Overnatning i rummelige værelser på 1.sal med adgang til køkken og bad, samt
+                        stor have</p>
+                </div>
+                <div class="menu-option">
+                    <img src="/assets/images/Skovtur-2.jpg">
+                    <h3>Toppen</h3>
+                    <p class="small-font">Overnatning i rummelige værelser på 1.sal med adgang til køkken og bad, samt
+                        stor have</p>
+                </div>
+                <div class="menu-option">
+                    <img src="/assets/images/Skovtur-2.jpg">
+                    <h3>Toppen</h3>
+                    <p class="small-font">Overnatning i rummelige værelser på 1.sal med adgang til køkken og bad, samt
+                        stor have</p>
+                </div>
+                <div class="menu-option">
+                    <img src="/assets/images/Skovtur-2.jpg">
+                    <h3>Toppen</h3>
+                    <p class="small-font">Overnatning i rummelige værelser på 1.sal med adgang til køkken og bad, samt
+                        stor have</p>
+                </div>
+                <div class="menu-option">
+                    <img src="/assets/images/Skovtur-2.jpg">
+                    <h3>Toppen</h3>
+                    <p class="small-font">Overnatning i rummelige værelser på 1.sal med adgang til køkken og bad, samt
+                        stor have</p>
+                </div>
+                <div class="menu-option">
+                    <img src="/assets/images/Skovtur-2.jpg">
+                    <h3>Toppen</h3>
+                    <p class="small-font">Overnatning i rummelige værelser på 1.sal med adgang til køkken og bad, samt
+                        stor have</p>
+                </div>
+                <div class="menu-option">
+                    <img src="/assets/images/Skovtur-2.jpg">
+                    <h3>Toppen</h3>
+                    <p class="small-font">Overnatning i rummelige værelser på 1.sal med adgang til køkken og bad, samt
+                        stor have</p>
+                </div>
+                <div class="menu-option">
+                    <img src="/assets/images/Skovtur-2.jpg">
+                    <h3>Toppen</h3>
+                    <p class="small-font">Overnatning i rummelige værelser på 1.sal med adgang til køkken og bad, samt
+                        stor have</p>
+                </div>
+            </div>
+            <div class="menu-grid-item2 menu-grid-items">
+                <div id="mapSticky">
+                    <div class="menu-filter">
+                        <div class="filter-btn">Fejø</div>
+                        <div class="filter-btn">Femø</div>
+                        <div class="filter-btn">Askø</div>
+                        <div class="filter-btn">Vis alle</div>
+                    </div>
+                    <div id="map" class="menu-map">map</div>
+                    <script async defer
+                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJp3BjaOaUmy-wQdQpXNiz-SGga9SYl4Y&callback=initMap">
+                    </script>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="info-section" class="stopPoint">
+        <div class="info-container grid">
+            <div class="info-grid-item1 info-grid-items">
+                hello
+            </div>
+        </div>
+       
+    </section>
+    <section id="showcase-icon-section">
+        icon section
+    </section>
+    <footer></footer>
+    <script>
+        window.onscroll = function () { stickyFunction() };
+
+        var myMap = document.getElementById("mapSticky");
+        var sticky = myMap.offsetTop;
+
+        function stickyFunction() {
+            if (window.pageYOffset > sticky || window.pageYOffset > 1000) {
+                myMap.classList.add("sticky");
+                console.log("sticky on");
+            }
+             
+            else {
+                myMap.classList.remove("sticky");
+                console.log("sticky off");
+            }
+        }
+
+    //     //--- get elements for easier naming in the code
+	// let stopPoint = document.querySelector('.stopPoint');
+	
+    // //---
+    //   window.onscroll = function() {onScrollChecks()};
+    
+    // function onScrollChecks() {
+    //   if (window.pageYOffset >= stopPoint.offsetTop) {
+    
+    //     document.querySelector('#mapSticky').classList.remove("sticky");
+    //     console.log("sticky off 2");
+    //   } 
+    //   else {
+    //     document.querySelector('#mapSticky').classList.add("sticky");
+    //     console.log("sticky on 2");
+    //   }
+    // }
+    </script>
 </body>
 
 <footer>
