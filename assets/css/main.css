@@ -12,6 +12,8 @@ html body {
 	/* incoming change */ background-color: #feffe9;
 }
 
+/* Text presets Startpoint */
+
 h1 {
 	font-size: 3rem;
 }
@@ -38,7 +40,9 @@ p {
 	display: table;
   }
 
-/* Links */
+  /* Text presets endpoint */
+
+/* Links styleing startpoint */
 a {
 	text-decoration: none;
 	color: #d85448;
@@ -57,6 +61,8 @@ a:hover {
 
     color: black;
 }
+
+/* Links styleing endpoint */
 
 /*-webkit-filter: saturate(8); */
 /* filter: saturate(8); */
@@ -144,8 +150,8 @@ a:hover {
 /* Main grid endpoint */
 
 
-/* Main styling startpoint */
+/* Footer styling startpoint */
 
-/* Main styling endpoint */
+/* Footer styling endpoint */
 
 /* Media Queries */
