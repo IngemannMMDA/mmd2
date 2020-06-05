@@ -137,6 +137,9 @@ header .hero-all-container {
 }
 
 /* --- STICKY MAP CLASS START! ---*/
+#mapSticky {
+    padding-left: 50px;
+}
 
 .sticky {
     position: fixed;
