@@ -57,7 +57,7 @@ color: #2F361F;
     }
 
     .menu-container {
-        height: 1700px;
+        
         /*background-color: black;*/
     }
     .menu-container .menu-grid-item1 {
@@ -120,3 +120,13 @@ color: #2F361F;
     }
 
     /* --- STIKY MAP CLASS SLUT! ---*/
+#info-section {
+    width: 100%;
+    height: 7010px;
+    background-color: #8B9F43;
+}
+
+#info-section .info-container .info-grid-item1 {
+    grid-column: 3/6;
+}
+
