@@ -15,13 +15,12 @@ function loadPage() {
 
     console.log("Hello?");
 
-
+    
     getData(); // henter openweathermap.org DATA
     initMap();
     // Showcase sidernes map scroll
-    filterButtons();
     filterSelection("alle");
-    
+    filterButtons();
 }
 
 
@@ -70,9 +69,10 @@ function renderWeather(data) { // starter Render funktionen. Alt bliver renderet
 }
 
 function initMap() {
-    
+  //var fejoCords = {lat: 54.9, lng: 11.483123};
       var mapLocation = {lat: 54.932620, lng: 11.483123}; // The location
       
+     // mapLocation = fejoCords;
       var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 11.60, // Hvor meget kortet er zoomet ind
           center: mapLocation,
@@ -179,30 +179,17 @@ function removeClass(element, name) {
 }
 
 function filterButtons() {
-  var btnBox = document.getElementById("menu-filter-Id");
-  var btns = btnBox.getElementsByClassName("filter-btn");
-  for (var i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("click", function(){
-      var current = document.getElementsByClassName("active");
-      current[0].className = current[0].className.replace(" active", "");
-      this.className += " active";
-    });
-  }
+var btnBox = document.getElementById("menu-filter-Id");
+var btns = btnBox.getElementsByClassName("filter-btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
 }
 
-  // window.onscroll = function() {stickyFunction()};
 
-  // var myMap = document.getElementById("mapSticky");
-  // var sticky = myMap.offsetTop;
-  
-  // function stickyFunction() {
-  //   if (window.pageYOffset > sticky) {
-  //     myMap.classList.add("sticky");
-  //     console.log("sticky on");
-  //   } else {
-  //     myMap.classList.remove("sticky");
-  //     console.log("sticky off");
-  //   }
-  // }
   
 
