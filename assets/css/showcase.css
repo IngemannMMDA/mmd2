@@ -46,6 +46,7 @@ header .hero-all-container {
 
 .title-grid-items p {
     text-align: center;
+    line-height: 1.15;
     color: #2F361F;
 }
 
@@ -54,7 +55,7 @@ header .hero-all-container {
     height: 2px;
     background-color: #2F361F;
     margin-top: 5px;
-    margin-bottom: 45px;
+    margin-bottom: 25px;
 }
 
 .menu-container {
@@ -124,7 +125,7 @@ header .hero-all-container {
 /* Add a dark background to the active button */
 
 .menu-container .filter-btn.active {
-    background-color: #666;
+    background-color: #8b9f43;
     color: white;
     border: 1px solid #ee5541;
 }
