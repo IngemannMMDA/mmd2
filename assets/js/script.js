@@ -135,10 +135,52 @@ function initMap() {
   //}
   
 
+  var molle = new google.maps.LatLng(53.9453898, 11.3998485 );
   var fejø = new google.maps.LatLng(54.9453898, 11.3998485 );
   var femø = new google.maps.LatLng(54.9731883, 11.5328826);
   var askø = new google.maps.LatLng(54.9015899, 11.4941195);
   var alle = new google.maps.LatLng(54.932620, 11.483123);
+
+
+  var icons = {
+    First: {
+      icon: '/assets/icons/marker.png'
+    },
+    second: {
+      icon: '/assets/icons/iconP.png'
+    }
+  };
+
+  var features = [
+    {
+      position: new google.maps.LatLng(54.9513315, 11.4327119), // Møllen
+      type: 'First'
+    }, {
+      position: new google.maps.LatLng(54.8942454, 11.5042558), // Askø strand
+      type: 'First'
+    }, {
+      position: new google.maps.LatLng(54.9764304, 11.5478742), //lerbakkevej
+      type: 'First'
+    }, {
+      position: new google.maps.LatLng(54.9513315,11.4327119),
+      type: 'second'
+    }, {
+      position: new google.maps.LatLng(54.9513315,11.4327119),
+      type: 'second'
+    }
+  ];
+function onlyThis() {
+  for (var i = 0; i < features.length; i++) {
+    var oermarker = new google.maps.Marker({
+      position: features[i].position,
+      icon: icons[features[i].type].icon,
+      map: map
+    });
+  };
+}
+  
+
+
 
   // var IslandName = document.getElementsByClassName("filter-btn").value;
   // eventlistener if click on btn then switch
@@ -147,31 +189,44 @@ function initMap() {
     console.log("changing to Fejø");
     mapLocation = map.setCenter(new google.maps.LatLng(54.9453898, 11.3998485));
     changeMarkerPosition(fejø);
+    onlyThis();
+    
+  
   });
 
   document.getElementById("femø-btn").addEventListener("click", function () {
     console.log("changing to Femø");
     mapLocation = map.setCenter(new google.maps.LatLng(54.9731883, 11.5328826));
     changeMarkerPosition(femø);
+    onlyThis();
+    
   });
+    
 
   document.getElementById("askø-btn").addEventListener("click", function () {
     console.log("changing to Askø");
     mapLocation = map.setCenter(new google.maps.LatLng(54.8932062, 11.4891612));
     changeMarkerPosition(askø);
+    onlyThis();
   });
 
   document.getElementById("alle-btn").addEventListener("click", function () {
     console.log("changing to Alle");
     mapLocation = map.setCenter(new google.maps.LatLng(54.932620, 11.483123));
     changeMarkerPosition(alle);
+    onlyThis();
   });
 
-  function changeMarkerPosition(Theposition) {
+  function changeMarkerPosition(Theposition) { // Flytter markeren til den specifikke ø.
     var latlng = Theposition;
     marker.setPosition(latlng);
 }
+// document.getElementsByClassName("menuOptions").addEventListener("click", function() {
+  
+  
+// });
 }
+
 
 
 
