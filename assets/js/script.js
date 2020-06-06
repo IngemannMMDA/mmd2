@@ -87,24 +87,7 @@ function initMap() {
     // mapTypeId: 'satellite'
     styles: [ // Styling start
 
-      {
-        "featureType": "landscape.natural",
-        "elementType": "geometry.fill",
-        "stylers": [
-          {
-            "color": "#ee5541"
-          }
-        ]
-      },
-      {
-        "featureType": "water",
-        "elementType": "geometry.fill",
-        "stylers": [
-          {
-            "color": "#feffe9"
-          }
-        ]
-      },
+      
       {
         "featureType": "administrative.land_parcel",
         "elementType": "labels",
