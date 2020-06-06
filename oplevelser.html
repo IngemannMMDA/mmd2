@@ -15,9 +15,10 @@
     <!--landingPage style CSS-->
     <script src="/assets/js/script.js" type="text/javascript" defer></script>
     <script src="https://kit.fontawesome.com/35987d7a34.js" crossorigin="anonymous"></script> <!--Font Awesome ikoner-->
+    <script src="/assets/js/oplevelser.js" type="text/javascript" defer></script>
 </head>
 
-<body>
+<body >
 
     <header>
         <div class="nav-container grid">
@@ -126,16 +127,18 @@
                         <button onclick="filterSelection('askø')" id="askø-btn" class="filter-btn" >Askø</button>
                         <button onclick="filterSelection('alle')" id="alle-btn" class="filter-btn active" >Vis alle</button>
                     </div>
-                    <div id="map" class="menu-map">map</div>
+                    <div  id="map" class="menu-map">map</div>
                     <script async defer
                         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJp3BjaOaUmy-wQdQpXNiz-SGga9SYl4Y&callback=initMap">
+                        
                         </script>
+                        
                 </div>
             </div>
         </div>
     </section>
    
-    <section id="info-section">
+    <section  id="info-section">
         <div class="info-container">
             <div class="info-grid-item1 info-grid-items">
                 <h2>Cykelruter og trampestier</h2>
