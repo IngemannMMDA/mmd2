@@ -59,7 +59,7 @@ display: block;
 	text-shadow: 2px 2px 5px #000;
 	position: absolute;
 	left: 50%;
-	top: 55.5%;
+	top: 61%;
 	transform: translate(-50%, -50%); /* Title position*/
 	font-size: 4vw;
 	font-weight: lighter;
@@ -247,7 +247,7 @@ display: block;
 	height: 500px;  
 	width: 40%;
 	margin: 0 auto 2.5vw auto;
-	border: 1px solid #EE5541;
+	border: 1px solid #dddddd;
   }
 
   /* Maps Section endpoint */
