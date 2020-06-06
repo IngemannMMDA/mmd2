@@ -18,9 +18,12 @@ function loadPage() {
     
     getData(); // henter openweathermap.org DATA
     initMap();
+    
     // Showcase sidernes map scroll
     filterSelection("alle");
     filterButtons();
+    
+    
 }
 
 
@@ -69,6 +72,7 @@ function renderWeather(data) { // starter Render funktionen. Alt bliver renderet
 }
 
 function initMap() {
+  
   //var fejoCords = {lat: 54.9, lng: 11.483123};
       var mapLocation = {lat: 54.932620, lng: 11.483123}; // The location
       
@@ -78,6 +82,8 @@ function initMap() {
           center: mapLocation,
           draggable: false,
           disableDefaultUI: true,
+          zoomControl: true,
+          
           // mapTypeId: 'satellite'
           styles: [ // Styling start
               
@@ -131,6 +137,7 @@ function initMap() {
                 ] // Styling slut
           
       });
+      
       var marker = new google.maps.Marker({
           position: mapLocation,
           map: map
@@ -143,9 +150,11 @@ function initMap() {
       // origin: new google.maps.Point(0,0),
       // anker: new google.maps.Point(20,20)
       //}
-  
+     
   }
-
+  
+ 
+  
   
 function filterSelection(c) {
   var x, i;
@@ -155,6 +164,7 @@ function filterSelection(c) {
     removeClass(x[i], "show");
     if (x[i].className.indexOf(c) > -1) addClass(x[i], "show");
   }
+  
 }
 
 function addClass(element, name) {
@@ -192,4 +202,20 @@ for (var i = 0; i < btns.length; i++) {
 
 
   
+
+// function changeMarkerPosition(marker) {
+//   var mapPointBox = document.getElementById("menu-filter-Id");
+// var knapper = mapPointBox.getElementsByClassName("filter-btn");
+// knapper[i].addEventListener("click", function(){
+//   var latlng = new google.maps.LatLng(40.748774, -73.985763);
+//   marker.setPosition(latlng);
+// }
+
+// function updatePosition() {
+//   latitude = parseInt(document.getElementById('latitude').value, 10);
+//   longtitude = parseInt(document.getElementById('longtitude').value, 10);
+//   myLatlng = new google.maps.LatLng(latitude, longtitude);
+//   marker.setPosition(myLatlng);
+//   map.setCenter(myLatlng);
+// }
 
