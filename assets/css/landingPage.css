@@ -244,9 +244,10 @@ display: block;
 #maps-section #map {
 	display: block;
 	top: 50px;
-	height: 400px;  
-	width: 100%;
-	margin: 0 0 2.5vw;
+	height: 500px;  
+	width: 40%;
+	margin: 0 auto 2.5vw auto;
+	border: 1px solid #EE5541;
   }
 
   /* Maps Section endpoint */
