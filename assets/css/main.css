@@ -160,6 +160,39 @@ footer {
 	background-color: #dfd25f;
 }
 
+.flex-footer {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.left-side-footer {
+	width: 50%;
+	padding: 15px 0 0 15px ;
+}
+
+.right-side-footer {
+	width: 50%;
+	padding: 15px 15px 0 0;
+}
+
+.right-side-footer p {
+	float: right;
+}
+
+.right-side-footer a {
+	margin: 0 0 0 50px;
+	float: right;
+	color: #000;
+}
+
+.right-side-footer a:hover {
+	color: #d85448;
+}
+
+.fab {
+	font-size: 25px;
+}
+
 /* Footer styling endpoint */
 
 /* Media Queries */
