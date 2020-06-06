@@ -133,11 +133,12 @@ function initMap() {
   // origin: new google.maps.Point(0,0),
   // anker: new google.maps.Point(20,20)
   //}
+  
 
-  // var fejø = map.setCenter(new google.maps.LatLng( 54.9453898, 11.3998485 ) );
-  //   var femø = map.setCenter(new google.maps.LatLng( 54.9693257, 11.5151125 ) );
-  //   var askø = map.setCenter(new google.maps.LatLng( 54.8932062, 11.4891612 ) );
-  //   var alle = map.setCenter(new google.maps.LatLng( 54.932620, 11.483123 ) );
+  var fejø = new google.maps.LatLng(54.9453898, 11.3998485 );
+  var femø = new google.maps.LatLng(54.9731883, 11.5328826);
+  var askø = new google.maps.LatLng(54.9015899, 11.4941195);
+  var alle = new google.maps.LatLng(54.932620, 11.483123);
 
   // var IslandName = document.getElementsByClassName("filter-btn").value;
   // eventlistener if click on btn then switch
@@ -145,24 +146,31 @@ function initMap() {
   document.getElementById("fejø-btn").addEventListener("click", function () {
     console.log("changing to Fejø");
     mapLocation = map.setCenter(new google.maps.LatLng(54.9453898, 11.3998485));
-
-
+    changeMarkerPosition(fejø);
   });
+
   document.getElementById("femø-btn").addEventListener("click", function () {
     console.log("changing to Femø");
-    mapLocation = map.setCenter(new google.maps.LatLng(54.9693257, 11.5151125));
+    mapLocation = map.setCenter(new google.maps.LatLng(54.9731883, 11.5328826));
+    changeMarkerPosition(femø);
   });
 
   document.getElementById("askø-btn").addEventListener("click", function () {
     console.log("changing to Askø");
     mapLocation = map.setCenter(new google.maps.LatLng(54.8932062, 11.4891612));
+    changeMarkerPosition(askø);
   });
 
   document.getElementById("alle-btn").addEventListener("click", function () {
     console.log("changing to Alle");
     mapLocation = map.setCenter(new google.maps.LatLng(54.932620, 11.483123));
+    changeMarkerPosition(alle);
   });
 
+  function changeMarkerPosition(Theposition) {
+    var latlng = Theposition;
+    marker.setPosition(latlng);
+}
 }
 
 
