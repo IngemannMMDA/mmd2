@@ -11,42 +11,42 @@ loadPage();
 
 
 function loadPage() {
-    // turn on the spinner
+  // turn on the spinner
 
-    console.log("Hello?");
+  console.log("Hello?");
 
-    
-    getData(); // henter openweathermap.org DATA
-    initMap();
-    
-    // Showcase sidernes map scroll
-    filterSelection("alle");
-    filterButtons();
-    
-    
+  filterSelection("alle");
+  filterButtons();
+  getData(); // henter openweathermap.org DATA
+  initMap();
+
+  // Showcase sidernes map scroll
+  
+
+
 }
 
 
 
 
 function getData() {
-    const xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function () {
-        if (this.readyState == 4 && this.status == 200) {
-            const data = JSON.parse(this.responseText);
-            console.log(data);
+  const xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function () {
+    if (this.readyState == 4 && this.status == 200) {
+      const data = JSON.parse(this.responseText);
+      console.log(data);
 
 
-            // console.log(data.explanation);
-            // fører koden videre til en function ved navn renderInfoWP
-            //renderInfo(data);
-            renderWeather(data);
-        }
+      // console.log(data.explanation);
+      // fører koden videre til en function ved navn renderInfoWP
+      //renderInfo(data);
+      renderWeather(data);
     }
-    // xhttp.open('GET', `${WPurl}posts/?tags=${postInfoId}`, true);
-    xhttp.open('GET', `https://api.openweathermap.org/data/2.5/weather?q=Aalborg&units=metric&appid=e352705e1d58913e65b917cc9d5164b9`, true);
-    //xhttp.open('GET', `${WPurl}${WPkey}`, true);
-    xhttp.send();
+  }
+  // xhttp.open('GET', `${WPurl}posts/?tags=${postInfoId}`, true);
+  xhttp.open('GET', `https://api.openweathermap.org/data/2.5/weather?q=Aalborg&units=metric&appid=e352705e1d58913e65b917cc9d5164b9`, true);
+  //xhttp.open('GET', `${WPurl}${WPkey}`, true);
+  xhttp.send();
 }
 
 
@@ -60,7 +60,7 @@ function getData() {
 
 
 function renderWeather(data) { // starter Render funktionen. Alt bliver renderet i querySelector elementet.
-    document.querySelector('#vejrAPI').innerHTML = `
+  document.querySelector('#vejrAPI').innerHTML = `
     <div class="temp">
         <p>${Math.round(data.main.temp)}&#8451</p>
     </div>
@@ -68,94 +68,107 @@ function renderWeather(data) { // starter Render funktionen. Alt bliver renderet
         <img src="https://openweathermap.org/img/w/${data.weather[0].icon}.png">  
     </div>
     `;
-// Math.round() Runder tallet op.
+  // Math.round() Runder tallet op.
 }
 
 function initMap() {
-  
+
   //var fejoCords = {lat: 54.9, lng: 11.483123};
-      var mapLocation = {lat: 54.932620, lng: 11.483123}; // The location
+  var mapLocation = { lat: 54.932620, lng: 11.483123 }; // The location
+
+  // mapLocation = fejoCords;
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 11.60, // Hvor meget kortet er zoomet ind
+    center: mapLocation,
+    draggable: false,
+    disableDefaultUI: true,
+    zoomControl: true,
+
+    // mapTypeId: 'satellite'
+    styles: [ // Styling start
+
       
-     // mapLocation = fejoCords;
-      var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 11.60, // Hvor meget kortet er zoomet ind
-          center: mapLocation,
-          draggable: false,
-          disableDefaultUI: true,
-          zoomControl: true,
-          
-          // mapTypeId: 'satellite'
-          styles: [ // Styling start
-              
-                  {
-                    "featureType": "landscape.natural",
-                    "elementType": "geometry.fill",
-                    "stylers": [
-                      {
-                        "color": "#ee5541"
-                      }
-                    ]
-                  },
-                  {
-                    "featureType": "water",
-                    "elementType": "geometry.fill",
-                    "stylers": [
-                      {
-                        "color": "#feffe9"
-                      }
-                    ]
-                  },
-                  {
-                    "featureType": "administrative.land_parcel",
-                    "elementType": "labels",
-                    "stylers": [
-                      {
-                        "visibility": "off"
-                      }
-                    ]
-                  },
-                  {
-                    "featureType": "poi",
-                    "elementType": "labels.text",
-                    "stylers": [
-                      {
-                        "visibility": "off"
-                      }
-                    ]
-                  },
-                  {
-                    "featureType": "road.local",
-                    "elementType": "labels",
-                    "stylers": [
-                      {
-                        "visibility": "off"
-                      }
-                    ]
-                  }
-                  
-                  
-                ] // Styling slut
-          
-      });
-      
-      var marker = new google.maps.Marker({
-          position: mapLocation,
-          map: map
-          //icon: customIcon    hvis man vil have sit eget icon
-          
-      })
-      //var customIcon = {
-      //	url: '.SVG/cloudy.svg',
-      // scaledSize: new google.maps.Size(90,90),
-      // origin: new google.maps.Point(0,0),
-      // anker: new google.maps.Point(20,20)
-      //}
-     
-  }
-  
- 
-  
-  
+      {
+        "featureType": "administrative.land_parcel",
+        "elementType": "labels",
+        "stylers": [
+          {
+            "visibility": "off"
+          }
+        ]
+      },
+      {
+        "featureType": "poi",
+        "elementType": "labels.text",
+        "stylers": [
+          {
+            "visibility": "off"
+          }
+        ]
+      },
+      {
+        "featureType": "road.local",
+        "elementType": "labels",
+        "stylers": [
+          {
+            "visibility": "off"
+          }
+        ]
+      }
+
+
+    ] // Styling slut
+
+  });
+
+  var marker = new google.maps.Marker({
+    position: mapLocation,
+    map: map
+    //icon: customIcon    hvis man vil have sit eget icon
+
+  })
+  //var customIcon = {
+  //	url: '.SVG/cloudy.svg',
+  // scaledSize: new google.maps.Size(90,90),
+  // origin: new google.maps.Point(0,0),
+  // anker: new google.maps.Point(20,20)
+  //}
+
+  // var fejø = map.setCenter(new google.maps.LatLng( 54.9453898, 11.3998485 ) );
+  //   var femø = map.setCenter(new google.maps.LatLng( 54.9693257, 11.5151125 ) );
+  //   var askø = map.setCenter(new google.maps.LatLng( 54.8932062, 11.4891612 ) );
+  //   var alle = map.setCenter(new google.maps.LatLng( 54.932620, 11.483123 ) );
+
+  // var IslandName = document.getElementsByClassName("filter-btn").value;
+  // eventlistener if click on btn then switch
+
+  document.getElementById("fejø-btn").addEventListener("click", function () {
+    console.log("changing to Fejø");
+    mapLocation = map.setCenter(new google.maps.LatLng(54.9453898, 11.3998485));
+
+
+  });
+  document.getElementById("femø-btn").addEventListener("click", function () {
+    console.log("changing to Femø");
+    mapLocation = map.setCenter(new google.maps.LatLng(54.9693257, 11.5151125));
+  });
+
+  document.getElementById("askø-btn").addEventListener("click", function () {
+    console.log("changing to Askø");
+    mapLocation = map.setCenter(new google.maps.LatLng(54.8932062, 11.4891612));
+  });
+
+  document.getElementById("alle-btn").addEventListener("click", function () {
+    console.log("changing to Alle");
+    mapLocation = map.setCenter(new google.maps.LatLng(54.932620, 11.483123));
+  });
+
+}
+
+
+
+
+
 function filterSelection(c) {
   var x, i;
   x = document.getElementsByClassName("menuOptions");
@@ -164,7 +177,7 @@ function filterSelection(c) {
     removeClass(x[i], "show");
     if (x[i].className.indexOf(c) > -1) addClass(x[i], "show");
   }
-  
+
 }
 
 function addClass(element, name) {
@@ -172,7 +185,7 @@ function addClass(element, name) {
   arr1 = element.className.split(" ");
   arr2 = name.split(" ");
   for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+    if (arr1.indexOf(arr2[i]) == -1) { element.className += " " + arr2[i]; }
   }
 }
 
@@ -182,26 +195,26 @@ function removeClass(element, name) {
   arr2 = name.split(" ");
   for (i = 0; i < arr2.length; i++) {
     while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
     }
   }
   element.className = arr1.join(" ");
 }
 
 function filterButtons() {
-var btnBox = document.getElementById("menu-filter-Id");
-var btns = btnBox.getElementsByClassName("filter-btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function(){
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
-}
+  var btnBox = document.getElementById("menu-filter-Id");
+  var btns = btnBox.getElementsByClassName("filter-btn");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function () {
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+    });
+  }
 }
 
 
-  
+
 
 // function changeMarkerPosition(marker) {
 //   var mapPointBox = document.getElementById("menu-filter-Id");
