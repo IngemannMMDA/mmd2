@@ -108,7 +108,9 @@ header .hero-all-container {
     
 }
 
-.menu-container .menuOptions p {}
+.menu-container .menuOptions p {
+    
+}
 
 .zoom {
     transition: transform .1s;
