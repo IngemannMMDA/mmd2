@@ -68,6 +68,14 @@ a:hover {
     color: black;
 }
 
+.logoHover {
+	transition: transform .2s;
+}
+
+
+.logoHover:hover {
+	transform: scale(1.1);
+}
 .btn {
 	margin: 5px;
 	background-color: #ee5541;
