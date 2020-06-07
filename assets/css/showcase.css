@@ -108,12 +108,14 @@ header .hero-all-container {
     
 }
 
-.menu-container .menuOptions p {}
+.menu-container .menuOptions p {
+    
+}
 
 .zoom {
     transition: transform .1s;
     /* Animation */
-    height: 258px;
+    height: 300px;
     width: 270px;
     background-color: white;
     position: relative; /*så numbIcon ikke er bagerst*/
