@@ -139,7 +139,7 @@ header .hero-all-container {
 .menu-container .filter-btn {
     height: 68px;
     width: 135px;
-    background-color: #ff7f6f;
+    background-color: #8b9f43;
     margin: 0 5px 13px 0;
     font-size: 1.75rem;
     padding-top: 5px;
@@ -156,9 +156,9 @@ header .hero-all-container {
 /* Add a dark background to the active button */
 
 .menu-container .filter-btn.active {
-    background-color: #8b9f43;
+    background-color: #FF7F6F;
     color: white;
-    border: 1px solid #ee5541;
+    border: 1px solid #2F361F;
 }
 
 .menu-container .menu-map {
