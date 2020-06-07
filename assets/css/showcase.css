@@ -139,12 +139,12 @@ header .hero-all-container {
 .menu-container .filter-btn {
     height: 68px;
     width: 135px;
-    background-color: white;
+    background-color: #ff7f6f;
     margin: 0 5px 13px 0;
     font-size: 1.75rem;
     padding-top: 5px;
     text-align: center;
-    color: #2F361F;
+    color: white;
     box-shadow: 1px 1px #eee;
     border: none;
 }
