@@ -111,9 +111,9 @@ function initMap() {
         info: "Askø strand",
         content: '<div>Askø Strand</div>'
       }, {
-        position: new google.maps.LatLng(54.9764304, 11.5478742), //lerbakkevej
+        position: new google.maps.LatLng(54.9764304, 11.5478742), //Jazz festival Femø
         type: 'third',
-        info: "Lerbakken",
+        info: "Femø Jazz Festival",
         content: '<div>lerbakkevej</div>'
       }, {
         position: new google.maps.LatLng(54.959926, 11.4165208), // Fejø kajakhus

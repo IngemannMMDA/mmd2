@@ -108,23 +108,18 @@ function initMap() {
         info: "Det gamle mejeri",
         content: '<div>Hello wrold this is content for møllen</div>'
         }, {
-        position: new google.maps.LatLng(54.9431367, 11.401614), // vinmarken
-        type: 'second',
-        info: "Vinmarken",
-        content: '<div>Askø Strand</div>'
-      }, {
         position: new google.maps.LatLng(54.8932775, 11.5021803), // Minihuse på Askø
-        type: 'third',
+        type: 'second',
         info: "Minihuse på Askø",
         content: '<div>lerbakkevej</div>'
       }, {
-        position: new google.maps.LatLng(54.9380124, 11.3742432), // Fejø camping
-        type: 'forth',
-        info: "Fejø camping",
+        position: new google.maps.LatLng(54.973511, 11.5567933), // Femø camping
+        type: 'third',
+        info: "Fasangården telt og naturplads",
         content: '<div>Fejø kajakhus</div>'
       }, {
         position: new google.maps.LatLng(54.9811568, 11.5330299), // Femø Bed & Breakfast
-        type: 'fifth',
+        type: 'forth',
         info: "Femø Bed & Breakfast",
         content: '<div>Femø Strand</div>'
       }
