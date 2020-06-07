@@ -54,8 +54,8 @@ function initMap() {
   
     var marker = new google.maps.Marker({
       position: mapLocation,
-      map: map
-      //icon: customIcon    hvis man vil have sit eget icon
+      // map: map er væk så rød pointer ikke vises på denne side
+     
   
     })
     //var customIcon = {
@@ -140,7 +140,7 @@ function initMap() {
     };
   }
   
-  
+  onlyThis();
   
   
    
