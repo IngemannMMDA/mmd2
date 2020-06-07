@@ -75,6 +75,7 @@ a:hover {
 
 .logoHover:hover {
 	transform: scale(1.1);
+	transform: 
 }
 .btn {
 	margin: 5px;
@@ -258,8 +259,13 @@ footer {
 	margin: 10px;
 	padding: 5px;
 	text-align: center;
-	border-radius: 50px;
+	border-radius: 100px;
 }
+
+.showcase-title-container .intro-ikoner img {
+	width: 140px;
+}
+
 
 .intro-ikoner p {
 	color: #EE5541;
