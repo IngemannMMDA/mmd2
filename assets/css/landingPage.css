@@ -94,13 +94,13 @@ display: block;
 }
 
 .intro-text h1 {
-	font-size: 35px;
+	font-size: 2.1875;
 	font-weight: lighter;
 	margin: 0 0 20px 0;
 }
 
 .intro-text p {
-	font-size: 22px;
+	font-size: 1.375rem;
 	margin: 15px 0;
 }
 
@@ -150,7 +150,7 @@ display: block;
 }
 
 #oplevelser-section h1  {
-	font-size: 30px;
+	font-size: 1.875rem;
 	font-weight: 100;
 }
 
@@ -163,7 +163,7 @@ display: block;
 
 #oplevelser-section p {
 	margin: 25px 0 25px 0;
-	font-size: 20px;
+	font-size: 1.25rem;
 	font-weight: 100;
 }
 
@@ -172,7 +172,7 @@ display: block;
 	border-radius: 5px;
 	padding: 5px;
 	color: #fff;
-	font-size: 20px;
+	font-size: 1.25rem;
 	font-weight: bold;
 }
 
@@ -238,7 +238,7 @@ display: block;
 #maps-section h1 {
 	display: block;
 	margin: 2.5vw 0 0 0;
-	font-size: 30px;
+	font-size: 1.875rem;
 	font-weight: 100;
 }
 
@@ -252,7 +252,7 @@ display: block;
 #maps-section p {
 	display: block;
 	margin: 25px 0 0 0;
-	font-size: 20px;
+	font-size: 1.25rem;
 	font-weight: 100;
 }
 
@@ -281,7 +281,7 @@ display: block;
 
 .transport-text h1 {
 	padding: 2.5vw 0 0 0;
-	font-size: 30px;
+	font-size: 1.875rem;
 	font-weight: 100;
 }
 
@@ -294,7 +294,7 @@ display: block;
 
 .transport-text p {
 	padding: 2vw 0 2vw 0;
-	font-size: 20px;
+	font-size: 1.25rem;
 	font-weight: 100;
 }
 
@@ -320,12 +320,12 @@ display: block;
 }
 
 .faerge-text h2 {
-	font-size: 30px;
+	font-size: 1.875rem;
 	font-weight: 100;
 }
 
 .faerge-text p {
-	font-size: 18px;
+	font-size: 1rem;
 	margin: 1vw 0 2vw 0;
 }
 
@@ -334,7 +334,7 @@ display: block;
 	border-radius: 5px;
 	padding: 5px;
 	color: #fff;
-	font-size: 20px;
+	font-size: 1.25rem;
 	font-weight: bold;
 }
 
@@ -374,7 +374,7 @@ display: block;
 
 .folg-os-h1 {
 	padding: 2.5vw 0 2.5vw 0;
-	font-size: 30px;
+	font-size: 1.875rem;
 	font-weight: 100;
 	text-align: center;
 }
@@ -392,7 +392,7 @@ display: block;
 .folg-os-text p {
 	padding: 0 0 0 17vw;
 	line-height: 5vh;
-	font-size: 20px;
+	font-size: 1.25rem;
 	font-weight: 100;
 }
 
