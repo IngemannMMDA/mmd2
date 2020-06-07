@@ -392,6 +392,11 @@ display: block;
 	font-weight: 100;
 }
 
+#folg-os-section .title-line {
+	width: 50%;
+	margin: 0 auto;
+}
+
 /* Følg Os Section endpoint */
 
 /* Media Queries below - Tilpasning til Mobil- og Tabeletversion */
