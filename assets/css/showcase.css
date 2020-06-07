@@ -50,13 +50,7 @@ header .hero-all-container {
     color: #2F361F;
 }
 
-.title-line {
-    width: 100%;
-    height: 2px;
-    background-color: #2F361F;
-    margin-top: 5px;
-    margin-bottom: 25px;
-}
+
 
 .menu-container {
     min-height: 600px;
