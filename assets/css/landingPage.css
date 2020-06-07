@@ -355,7 +355,7 @@ display: block;
 
 /* Følg Os Section startpoint */
 
-.folg-os-section {
+#folg-os-section {
 	display: block;
 	width: 100%;
 	height: auto;
@@ -365,7 +365,7 @@ display: block;
 	color: #000;
 }
 
-.folg-os-section .title-line {
+#folg-os-section .title-line {
     width: 50%;
     height: 2px;
     background-color: #2F361F;
