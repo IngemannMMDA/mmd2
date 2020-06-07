@@ -14,11 +14,11 @@ function loadPage() {
   // turn on the spinner
 
   console.log("Hello?");
-
+  getData();
   filterSelection("alle");
   filterButtons();
-  getData(); // henter openweathermap.org DATA
-  initMap();
+   // henter openweathermap.org DATA
+  
 
   // Showcase sidernes map scroll
   
