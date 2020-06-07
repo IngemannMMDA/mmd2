@@ -44,7 +44,7 @@ function getData() {
     }
   }
   // xhttp.open('GET', `${WPurl}posts/?tags=${postInfoId}`, true);
-  xhttp.open('GET', `https://api.openweathermap.org/data/2.5/weather?q=Aalborg&units=metric&appid=e352705e1d58913e65b917cc9d5164b9`, true);
+  xhttp.open('GET', `https://api.openweathermap.org/data/2.5/weather?lat=54&lon=11&units=metric&appid=e352705e1d58913e65b917cc9d5164b9`, true);
   //xhttp.open('GET', `${WPurl}${WPkey}`, true);
   xhttp.send();
 }

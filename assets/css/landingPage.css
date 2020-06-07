@@ -108,31 +108,7 @@ display: block;
 	margin: 0 0 80px 0;
 }
 
-.flex-ikoner {
-	display: flex;
-	flex-wrap: nowrap;
-	width: 100%;
-	height: auto;
-	justify-content: center;
-}
 
-.intro-ikoner {
-	margin: 0 20px;
-	text-align: center;
-}
-
-.intro-ikoner img {
-	background-color: #ee5541;
-	width: 100px;
-	margin: 10px;
-	padding: 5px;
-	text-align: center;
-	border-radius: 50px;
-}
-
-.intro-ikoner p {
-	color: #EE5541;
-}
 
 /* Intro Section endpoint */
 

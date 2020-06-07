@@ -210,6 +210,49 @@ footer {
 	font-size: 25px;
 }
 
+
+.flex-ikoner {
+	display: flex;
+	flex-wrap: nowrap;
+	width: 100%;
+	height: auto;
+	justify-content: center;
+}
+
+.intro-ikoner {
+	margin: 0 20px;
+	text-align: center;
+}
+
+.intro-ikoner img {
+	background-color: #ee5541;
+	width: 100px;
+	margin: 10px;
+	padding: 5px;
+	text-align: center;
+	border-radius: 50px;
+}
+
+.intro-ikoner p {
+	color: #EE5541;
+}
+/* Gif ON / OFF start */
+.displayNone {
+	display: none;
+}
+.displayBlock {
+	display: block;
+}
+.iconHover:hover .displayNone {
+	display: block;
+}
+.iconHover:hover .displayBlock {
+	display: none;
+}
+/* Gif ON / OFF slut*/
+
+
+
 /* Footer styling endpoint */
 
 /* Media Queries */
