@@ -143,18 +143,7 @@ display: block;
 	font-weight: 100;
 }
 
-#oplevelser-section a {
-	background-color: #ee5541;
-	border-radius: 5px;
-	padding: 5px;
-	color: #fff;
-	font-size: 1.25rem;
-	font-weight: bold;
-}
 
-#oplevelser-section a:hover {
-	background-color: #ff7f6f;
-}
 
 .flex-billeder {
 	display: flex;
@@ -303,19 +292,6 @@ display: block;
 .faerge-text p {
 	font-size: 1rem;
 	margin: 1vw 0 2vw 0;
-}
-
-.faerge-text a {
-	background-color: #ee5541;
-	border-radius: 5px;
-	padding: 5px;
-	color: #fff;
-	font-size: 1.25rem;
-	font-weight: bold;
-}
-
-.faerge-text a:hover {
-	background-color: #ff7f6f;
 }
 
 /* Transport Section endpoint */
