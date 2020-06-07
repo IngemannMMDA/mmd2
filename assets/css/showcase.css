@@ -81,6 +81,8 @@ header .hero-all-container {
     margin: 0 auto 20px 0;
 }
 
+
+
 .overflow {
     overflow: auto;
     height: 750px;
@@ -96,9 +98,40 @@ header .hero-all-container {
 .menu-container .menuOptions img {
     height: 135px;
     width: 100%;
+    position: relative;
+    z-index: 1;
+    top: 0;
+}
+
+#menu-section .menu-container .menu-grid-items .zoom .numbIcon {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 40px;
+    width: 40px;
+    z-index: 2; /* foran .zoom transition */
+    
 }
 
 .menu-container .menuOptions p {}
+
+.zoom {
+    transition: transform .1s;
+    /* Animation */
+    height: 258px;
+    width: 270px;
+    background-color: white;
+    position: relative; /*så numbIcon ikke er bagerst*/
+    top: 0;
+}
+
+.zoom:hover {
+    border: #ee5541 solid 1px;
+    transform: scale(1.02);
+    
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
 
 .menu-container .menu-filter {
     display: flex;
@@ -248,16 +281,3 @@ header .hero-all-container {
     }
 }
 
-.zoom {
-    transition: transform .1s;
-    /* Animation */
-    height: 258px;
-    width: 270px;
-    background-color: white;
-}
-
-.zoom:hover {
-    border: #ee5541 solid 1px;
-    transform: scale(1.02);
-    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-}
