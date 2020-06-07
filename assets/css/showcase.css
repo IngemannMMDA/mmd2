@@ -215,14 +215,23 @@ header .hero-all-container {
     .title-grid-item2 {
         grid-column: 7/13;
     }
+    .info-grid-item1 {
+        
+        height: auto;
+    }
 }
 
 @media screen and (max-width: 1050px) {
+
+    html {
+        font-size: 14px;
+    }
+
     .menu-container .menu-grid-item1 {
         grid-column: 2/4;
     }
     .menu-container .menu-grid-item2 {
-        grid-column: 8/15;
+        grid-column: 7/14;
     }
     .menu-container .menu-map {
         height: 400px;
@@ -238,11 +247,26 @@ header .hero-all-container {
     .flex-ikoner {
         flex-wrap: wrap;
     }
+
+    .flex {
+        flex-wrap: wrap;
+    }
 }
 
 @media screen and (max-width: 750px) {
+
+    html {
+        font-size: 12px;
+    }
+
     .menu-container .menu-grid-item1 {
         grid-column: 2/15;
+        margin: 0 auto;
+    }
+    .menu-container .menu-grid-item1.overflow {
+        overflow: none;
+        height: auto;
+       
     }
     .menu-container .menu-grid-item2 {
         display: none;
@@ -253,5 +277,11 @@ header .hero-all-container {
     .title-grid-item2 {
         grid-column: 2/15;
     }
+
+    #title-section {
+        height: auto;
+        margin-bottom: 50px;
+    }
+
 }
 

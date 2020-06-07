@@ -59,9 +59,10 @@ display: block;
 	text-shadow: 2px 2px 5px #000;
 	position: absolute;
 	left: 50%;
-	top: 61%;
-	transform: translate(-50%, -250%); /* Title position*/
-	font-size: 4vw;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 3rem;
+	
 	font-weight: lighter;
 	line-height: .1vw;
 	word-spacing: .25em;
@@ -356,3 +357,10 @@ display: block;
 /* Følg Os Section endpoint */
 
 /* Media Queries below - Tilpasning til Mobil- og Tabeletversion */
+@media screen and (max-width: 1050px) {
+	#hero-section h1 {
+		line-height: initial;
+		word-spacing: initial;
+	}
+
+}
