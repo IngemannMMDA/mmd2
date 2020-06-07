@@ -155,7 +155,7 @@ display: block;
 }
 
 #oplevelser-section .title-line {
-    width: 35%;
+    width: 40%;
     height: 2px;
     background-color: #fff;
     margin: 5px auto 25px auto;;
@@ -243,9 +243,9 @@ display: block;
 }
 
 #maps-section .title-line {
-    width: 23%;
+    width: 30%;
     height: 2px;
-    background-color: #000;
+    background-color: #2F361F;
     margin: 5px auto 25px auto;;
 }
 
@@ -286,9 +286,9 @@ display: block;
 }
 
 .transport-text .title-line {
-	width: 30%;
+	width: 40%;
     height: 2px;
-    background-color: #000;
+    background-color: #2F361F;
     margin: 5px auto 25px auto;
 }
 
@@ -302,7 +302,7 @@ display: block;
 	display: flex;
 	flex-wrap: nowrap;
 	width: 50%;
-	height: 32.5vh;
+	height: auto;
 	margin: 0 auto;
 	background-color: #fff;
 }
@@ -359,13 +359,17 @@ display: block;
 	display: block;
 	width: 100%;
 	height: auto;
+	margin: 0 auto;
+	background-color: #feffe9;
+	text-align: center;
+	color: #000;
 }
 
 .folg-os-section .title-line {
-    width: 100%;
+    width: 50%;
     height: 2px;
-    background-color: #000;
-    margin: 5px auto 25px auto;;
+    background-color: #2F361F;
+    margin: 5px auto 25px auto;
 }
 
 .folg-os-h1 {
