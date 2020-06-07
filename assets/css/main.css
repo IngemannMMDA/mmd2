@@ -68,6 +68,26 @@ a:hover {
     color: black;
 }
 
+.btn {
+	margin: 5px;
+	background-color: #ee5541;
+	border-radius: 5px;
+	padding: 5px;
+	color: #fff;
+	font-size: 1.25rem;
+	font-weight: bold;
+}
+
+.btn:hover {
+	background-color: #ff7f6f;
+	color: #fff;
+	cursor: pointer;
+}
+
+.btn:visited {
+    color: #fff;
+}
+
 /* Links styleing endpoint */
 
 /*-webkit-filter: saturate(8); */
