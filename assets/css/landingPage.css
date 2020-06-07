@@ -3,7 +3,7 @@
 
 #vejrAPI {
  background-color:transparent;
- margin: 0 0 0 5vw;
+ margin: 0 0 0 0;
 }
 
 .temp {
@@ -60,8 +60,8 @@ display: block;
 	position: absolute;
 	left: 50%;
 	top: 61%;
-	transform: translate(-50%, -50%); /* Title position*/
-	font-size: 5vw;
+	transform: translate(-50%, -250%); /* Title position*/
+	font-size: 4vw;
 	font-weight: lighter;
 	word-spacing: .2em;
 }
