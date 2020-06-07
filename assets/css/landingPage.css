@@ -7,7 +7,7 @@
 }
 
 .temp {
-	display: inline-block;
+	display: block;
 	float: left;
 	width: 60px;
 }
@@ -17,7 +17,7 @@
 }
 
 .tempIcon {
-	display: inline-block;
+	display: block;
 	float: left;
 	width: 50px
 }
@@ -63,7 +63,8 @@ display: block;
 	transform: translate(-50%, -250%); /* Title position*/
 	font-size: 4vw;
 	font-weight: lighter;
-	word-spacing: .2em;
+	line-height: .1vw;
+	word-spacing: .25em;
 }
 
 /* Hero Section endpoint */
@@ -148,9 +149,16 @@ display: block;
 	color: #fff;
 }
 
-#oplevelser-section h1 {
+#oplevelser-section h1  {
 	font-size: 30px;
 	font-weight: 100;
+}
+
+#oplevelser-section .title-line {
+    width: 35%;
+    height: 2px;
+    background-color: #fff;
+    margin: 5px auto 25px auto;;
 }
 
 #oplevelser-section p {
@@ -234,6 +242,13 @@ display: block;
 	font-weight: 100;
 }
 
+#maps-section .title-line {
+    width: 23%;
+    height: 2px;
+    background-color: #000;
+    margin: 5px auto 25px auto;;
+}
+
 #maps-section p {
 	display: block;
 	margin: 25px 0 0 0;
@@ -268,6 +283,13 @@ display: block;
 	padding: 2.5vw 0 0 0;
 	font-size: 30px;
 	font-weight: 100;
+}
+
+.transport-text .title-line {
+	width: 30%;
+    height: 2px;
+    background-color: #000;
+    margin: 5px auto 25px auto;
 }
 
 .transport-text p {
@@ -337,6 +359,13 @@ display: block;
 	display: block;
 	width: 100%;
 	height: auto;
+}
+
+.folg-os-section .title-line {
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    margin: 5px auto 25px auto;;
 }
 
 .folg-os-h1 {

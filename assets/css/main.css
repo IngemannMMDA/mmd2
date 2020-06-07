@@ -87,8 +87,8 @@ a:hover {
 .nav-grid-items {
 	/* ALL grid items in the NAV*/
 	width: 100%;
-	padding-top: 50px;
-	/* incoming change*/font-size: 1.2vw;
+	padding-top: 40px;
+	/* incoming change*/font-size: 1vw;
 	/* OLD  font-size: 1.55rem;*/
 	font-weight: 100;
 	letter-spacing: 3px;
@@ -123,20 +123,20 @@ a:hover {
 
 .nav-container .nav-grid-item1 a img {
 	max-height: 96px;
-	margin-top: -40px;
+	margin-top: -30px;
 	background-color: #fff;
 	border-radius: 50%;
 }
 
 
 #vejrAPI {
-	background-color: rgb(255, 255, 255);
+	background-color: #fff;
    }
    
    
    
    .temp {
-	   display: inline-block;
+	   display: block;
 	   float: left;
 	   width: 60px;
    }
@@ -147,7 +147,7 @@ a:hover {
    }
    
    .tempIcon {
-	   display: inline-block;
+	   display: block;
 	   float: left;
 	   width: 50px
    }
@@ -173,7 +173,7 @@ a:hover {
 footer {
 	display: block;
 	width: 100%;
-	height: 50px;
+	height: 60px;
 	background-color: #dfd25f;
 }
 
