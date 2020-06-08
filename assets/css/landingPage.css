@@ -240,7 +240,7 @@ display: block;
 	padding: 0 0 2.5vw 0;
 	background-color: #8b9f43;
 	text-align: center;
-	color: #000;
+	color: #fff;
 }
 
 .transport-text h1 {
@@ -252,7 +252,7 @@ display: block;
 .transport-text .title-line {
 	width: 40%;
 	height: 2px;
-	background-color: #2F361F;
+	background-color: #fff;
 	margin: 5px auto 25px auto;
 }
 
@@ -269,6 +269,7 @@ display: block;
 	height: auto;
 	margin: 0 auto;
 	background-color: #fff;
+	color: #2F361F;
 }
 
 .transport-billede {
@@ -300,7 +301,7 @@ display: block;
 #instagram-testerbox {
 	width: 350px;
 	height: auto;
-	margin: 0 5vw 0 0;
+	margin: 10px 5vw 0 0;
 	
 }
 
@@ -315,7 +316,7 @@ display: block;
 	margin: 0 auto;
 	background-color: #feffe9;
 	text-align: center;
-	color: #000;
+	color: #2F361F;
 }
 
 #folg-os-section .title-line {
@@ -339,7 +340,7 @@ display: block;
 
 .folg-os-text {
 	width: 50%;
-	margin: 0 auto;
+	margin: 0 auto 20px;
 }
 
 .folg-os-text p {
@@ -389,7 +390,7 @@ display: block;
 		height: 300px;
 	}
 	#hero-section h1 {
-		transform: translate(-50%, -200%);
+		transform: translate(-50%, -500%);
 	}
 	#oplevelser-section {
 		padding: 2.5vw 0vw;
@@ -431,4 +432,11 @@ display: block;
 		line-height: 1.5;
 	}
 	
+	
+
+}
+@media screen and (max-width: 662px) {
+	#hero-section h1 {
+		transform: translate(-50%, -250%);
+	}
 }

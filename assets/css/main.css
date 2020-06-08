@@ -499,3 +499,8 @@ footer {
 }
 
 
+@media screen and (max-width: 467px) {
+	.right-side-footer a {
+		margin: -20px 0 0 50px;
+	}
+}
