@@ -201,7 +201,11 @@ header .hero-all-container {
     /*margin top er anderledes i showcase end på landingPage*/
 }
 
+/* Auto Scroll Down Button */
 
+#section1 i {
+    font-size: 2vw;
+}
 
 /* media queries */
 
