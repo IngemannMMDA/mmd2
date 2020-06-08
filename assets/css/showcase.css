@@ -230,6 +230,10 @@ header .hero-all-container {
         font-size: 14px;
     }
 
+    header .hero-all-container {
+        height: 250px;
+    }
+
     .menu-container .menu-grid-item1 {
         grid-column: 2/4;
     }
@@ -266,6 +270,8 @@ header .hero-all-container {
     html {
         font-size: 12px;
     }
+
+    
 
     .menu-container .menu-grid-item1 {
         grid-column: 2/15;
