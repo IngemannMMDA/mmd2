@@ -302,14 +302,18 @@ footer {
 }
 
 .intro-ikoner img {
-	background-color: #ee5541;
-	width: 120px;
-	margin: 10px;
-	
+	width: 100px;
 	text-align: center;
-	border-radius: 100px;
-	
 }
+
+.intro-ikoner-big img { /* TIL store iconer */
+	background-color:#EE5541;
+	border-radius: 100px;
+	margin: 10px;
+	width: 120px;
+	text-align: center;
+}
+
 
 .showcase-title-container .intro-ikoner img {
 	width: 140px;
@@ -330,6 +334,11 @@ footer {
 	
 }
 
+.iconHover-background {
+	background-color:#EE5541;
+	border-radius: 100px;
+	margin: 10px;
+}
 
 
 .iconHover:hover .displayNone {

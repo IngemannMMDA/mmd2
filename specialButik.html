@@ -56,8 +56,8 @@
         <div class="showcase-title-container grid">
 
             <div class="title-grid-item1 title-grid-items">
-                <div class="intro-ikoner">
-                    <a href="/overnatning.html"><img src="assets/icons/icon_butik_-_hvid.png">
+                <div class="intro-ikoner-big">
+                    <a href="/overnatning.html"><img src="assets/icons/icon_butikker_static.png">
                     </a>
                 </div>
             </div>
@@ -124,27 +124,62 @@
     <section class="runde-ikoner">
         <div class="flex-ikoner">
             <div class="intro-ikoner">
-                <a href="/overnatning.html"><img src="assets/icons/icon_overnatning_-_hvid.png">
-                    <p>Overnatning</p>
-                </a>
+                <!-- Hover class der skifter display på statisk og animerede billed -->
+                <a class="iconHover" href="/overnatning.html">
+                    <div class="iconHover-background">
+                    
+                        <!-- Statiske billede -->
+                        <img id="iconStatic" class="displayBlock" src="assets/icons/icon_overnatning_static.png">
+                        <!-- animerede billede -->
+                        <img id="iconanimated" class="displayNone" src="assets/icons/icon_overnatning_animated.png">
+                    </div>
+                        <p>Overnatning</p>
+                    </a>
+                
+               
             </div>
             <div class="intro-ikoner">
-                <a href="/spisDrik.html"> <img src="assets/icons/icon_spise_-_hvid.png">
+                <a class="iconHover" href="/spisDrik.html">
+                    <div class="iconHover-background">
+                         <!-- Statiske billede -->
+                    <img id="iconStatic" class="displayBlock" src="assets/icons/icon_spisesteder_static.png">
+                    <!-- animerede billede -->
+                    <img id="iconanimated" class="displayNone" src="assets/icons/icon_spisesteder_animated.png">
+                    </div>
                     <p>Spisesteder</p>
                 </a>
             </div>
             <div class="intro-ikoner">
-                <a href="/oplevelser.html"> <img src="assets/icons/icon_oplevelser_-_hvid.png">
+                <a class="iconHover" href="/oplevelser.html">
+                    <div class="iconHover-background">
+                        <img id="iconStatic" class="displayBlock" src="assets/icons/icon_oplevelser_static.png">
+                        <!-- Statiske billede -->
+                        <img id="iconanimated" class="displayNone" src="assets/icons/icon_oplevelser_animated.png">
+                        <!-- animerede billede -->
+                    </div>
+                    
                     <p>Oplevelser</p>
                 </a>
             </div>
             <div class="intro-ikoner">
-                <a href="/specialButik.html"> <img src="assets/icons/icon_butik_-_hvid.png">
+                <a class="iconHover" href="/specialButik.html">
+                    <div class="iconHover-background">
+                    <!-- Statiske billede -->
+                    <img id="iconStatic" class="displayBlock" src="assets/icons/icon_butikker_static.png">
+                    <!-- animerede billede -->
+                    <img id="iconanimated" class="displayNone" src="assets/icons/icon_butikker_animated.png">
+                </div>
                     <p>Butikker</p>
                 </a>
             </div>
             <div class="intro-ikoner">
-                <a href="/transport.html"> <img src="assets/icons/icon_transport_-_hvis.png">
+                <a class="iconHover" href="/transport.html">
+                    <div class="iconHover-background">
+                    <!-- Statiske billede -->
+                    <img id="iconStatic" class="displayBlock" src="assets/icons/icon_transport_static.png">
+                    <!-- animerede billede -->
+                    <img id="iconanimated" class="displayNone" src="assets/icons/icon_transport_animated.png">
+                </div>
                     <p>Transport</p>
                 </a>
             </div>
