@@ -76,6 +76,7 @@ display: block;
 	width: 100%;
 	height: auto;
 	display: flex;
+	scroll-behavior: smooth;
 }
 
 .intro-logo {
