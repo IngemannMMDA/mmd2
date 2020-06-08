@@ -303,11 +303,12 @@ footer {
 
 .intro-ikoner img {
 	background-color: #ee5541;
-	width: 100px;
+	width: 120px;
 	margin: 10px;
-	padding: 5px;
+	
 	text-align: center;
 	border-radius: 100px;
+	
 }
 
 .showcase-title-container .intro-ikoner img {
@@ -326,7 +327,10 @@ footer {
 
 .displayBlock {
 	display: block;
+	
 }
+
+
 
 .iconHover:hover .displayNone {
 	display: block;
@@ -334,7 +338,18 @@ footer {
 
 .iconHover:hover .displayBlock {
 	display: none;
+	
 }
+
+.intro-ikoner .iconHover img:hover {
+    padding: 12px;
+}
+
+a.iconHover:hover img {
+	padding: 12px;
+}
+    
+
 
 /* Gif ON / OFF slut*/
 
