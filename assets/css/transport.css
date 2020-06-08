@@ -1,5 +1,5 @@
 header .hero-all-container {
-    height: 404px;
+    height: auto;
     overflow: hidden;
     background-size: cover;
     background-position: center;
@@ -10,11 +10,16 @@ header .hero-all-container {
     display: block;
     width: 100%;
     height: auto;
+    margin-bottom: 10vw;
 }
 
-#title-section .btn {
+#title-section .showcase-title-container .btn {
+    display: block;
+    width: 17%;
+    height: auto;
     background-color: #ee5541;
     border-radius: 5px;
+    margin: 0 auto;
     padding: 5px;
     color: #fff;
     font-size: 1.25rem;
@@ -36,7 +41,7 @@ header .hero-all-container {
 .billeder .sejlplan {
 	width: 350px;
 	height: 280px;
-	margin: 50px 10px 75px 10px;
+	margin: 50px 10px 50px 10px;
 	border: 5px solid #fff;
 	background-image: url(../images/white-cruiser-ship-on-body-of-water-during-daytime-172920.jpg);
 	background-size: cover;
