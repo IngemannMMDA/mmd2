@@ -297,17 +297,6 @@ display: block;
 
 /* Transport Section endpoint */
 
-/* INSTAGRAM styling startpoint*/
-
-#instagram-testerbox {
-	width: 350px;
-	height: auto;
-	margin: 10px 5vw 0 0;
-	
-}
-
-/* INSTAGRAM styling endpoint */
-
 /* Følg Os Section startpoint */
 
 #folg-os-section {
@@ -339,9 +328,19 @@ display: block;
 	flex-wrap: wrap;
 }
 
+/* INSTAGRAM styling startpoint*/
+
+#instagram-testerbox {
+	width: 300px;
+	height: auto;
+	margin: 0 0 20px;
+}
+
+/* INSTAGRAM styling endpoint */
+
 .folg-os-text {
 	width: 50%;
-	margin: 0 auto 20px;
+	margin: 0 50px 20px 100px;
 }
 
 .folg-os-text p {
@@ -378,12 +377,16 @@ display: block;
 		height: 300px;
 		width: 90%;
 	}
-
 	#instagram-testerbox {
 		margin: 0 auto;
 	}
-	
-	
+	.folg-os-text {
+		width: 51%;
+		margin: 0 auto;
+	}
+	.folg-os-text p {
+		padding: 0;
+	}
 }
 
 @media screen and (max-width: 750px) {
@@ -410,32 +413,29 @@ display: block;
 		width: 350px;
 		height: 215px;
 	}
-
 	#maps-section #map {
 		top: 25px;
 		height: 300px;
 		width: 90%;
 	}
-
 	.flex-faergerute {
 		flex-wrap: wrap;
 		width: 80%;
-		
 	}
-
 	.faerge-text {
 		height: 150px;
 		text-align: center;
+	}
+	#instagram-testerbox {
+		width: 50%;
 	}
 
 	.folg-os-text p {
 		padding: 0;
 		line-height: 1.5;
 	}
-	
-	
-
 }
+
 @media screen and (max-width: 662px) {
 	#hero-section h1 {
 		transform: translate(-50%, -250%);
