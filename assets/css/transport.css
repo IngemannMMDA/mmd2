@@ -1,7 +1,45 @@
 header .hero-all-container {
     height: 404px;
-        overflow: hidden;
-        background-size: cover;
-        background-position: center;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
     background-image: url('/assets/images/white-crewship-near-island-under-clear-sky-at-daytime-164180.jpg');
+}
+
+#title-section {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#title-section .btn {
+    background-color: #ee5541;
+    border-radius: 5px;
+    padding: 5px;
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: bold; 
+}
+
+#title-section .btn:hover {
+    background-color: #ff7f6f;
+}
+
+.flex-billeder {
+	display: flex;
+	flex-wrap: nowrap;
+	width: auto;
+	height: auto;
+	justify-content: center;
+}
+
+.billeder .sejlplan {
+	width: 350px;
+	height: 280px;
+	margin: 50px 10px 75px 10px;
+	border: 5px solid #fff;
+	background-image: url(../images/white-cruiser-ship-on-body-of-water-during-daytime-172920.jpg);
+	background-size: cover;
+	background-position: center bottom;
+	background-repeat: no-repeat;
 }
