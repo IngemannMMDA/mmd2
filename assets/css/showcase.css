@@ -139,7 +139,7 @@ header .hero-all-container {
 .menu-container .filter-btn {
     height: 68px;
     width: 135px;
-    background-color: #8b9f43;
+    background-color: #b3a8a5;
     margin: 0 5px 13px 0;
     font-size: 1.75rem;
     padding-top: 5px;
@@ -156,7 +156,7 @@ header .hero-all-container {
 /* Add a dark background to the active button */
 
 .menu-container .filter-btn.active {
-    background-color: #FF7F6F;
+    background-color: #EE5541;
     color: white;
     border: 1px solid #2F361F;
 }
@@ -165,7 +165,7 @@ header .hero-all-container {
     height: 600px;
     width: 38.5vw;
     background-color: blue;
-    border: #ee5541 solid 1px;
+    
 }
 
 /* --- STICKY MAP CLASS START! ---*/
