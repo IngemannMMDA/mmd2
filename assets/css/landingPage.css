@@ -301,6 +301,7 @@ display: block;
 	width: 350px;
 	height: auto;
 	margin: 0 5vw 0 0;
+	
 }
 
 /* INSTAGRAM styling endpoint */
@@ -333,12 +334,12 @@ display: block;
 
 .flex-folg-os {
 	display: flex;
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
 }
 
 .folg-os-text {
 	width: 50%;
-	margin: 5vw;
+	margin: 0 auto;
 }
 
 .folg-os-text p {
@@ -350,7 +351,7 @@ display: block;
 
 #folg-os-section .title-line {
 	width: 50%;
-	margin: 0 auto;
+	margin: 0 auto 20px;
 }
 
 /* Følg Os Section endpoint */
@@ -375,6 +376,12 @@ display: block;
 		height: 300px;
 		width: 90%;
 	}
+
+	#instagram-testerbox {
+		margin: 0 auto;
+	}
+	
+	
 }
 
 @media screen and (max-width: 750px) {
@@ -406,6 +413,22 @@ display: block;
 		top: 25px;
 		height: 300px;
 		width: 90%;
+	}
+
+	.flex-faergerute {
+		flex-wrap: wrap;
+		width: 80%;
+		
+	}
+
+	.faerge-text {
+		height: 150px;
+		text-align: center;
+	}
+
+	.folg-os-text p {
+		padding: 0;
+		line-height: 1.5;
 	}
 	
 }
