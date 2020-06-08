@@ -2,8 +2,8 @@
 /* CSS Document */
 
 #vejrAPI {
- background-color:transparent;
- margin: 0 0 0 0;
+	background-color: transparent;
+	margin: 0 0 0 0;
 }
 
 .temp {
@@ -29,9 +29,10 @@
 /* Hero Section startpoint */
 
 #hero-section {
-height: 700px;
-background-color: lightcoral;
+	height: 700px;
+	background-color: lightcoral;
 }
+
 /*
 #hero-section .hero-container {
 height: 700px;
@@ -48,9 +49,9 @@ display: block;
 
 #hero-section .hero-container {
 	height: 715px;
-    overflow: hidden;
-    background-size: cover;
-    background-position: center;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center;
 	background-image: url('/assets/images/Beach-1.jpg');
 }
 
@@ -62,7 +63,6 @@ display: block;
 	top: 50%;
 	transform: translate(-50%, -50%);
 	font-size: 3rem;
-	
 	font-weight: lighter;
 	line-height: .1vw;
 	word-spacing: .25em;
@@ -109,8 +109,6 @@ display: block;
 	margin: 0 0 80px 0;
 }
 
-
-
 /* Intro Section endpoint */
 
 /* Oplevelser Section startpoint */
@@ -126,16 +124,17 @@ display: block;
 	color: #fff;
 }
 
-#oplevelser-section h1  {
+#oplevelser-section h1 {
 	font-size: 1.875rem;
 	font-weight: 100;
 }
 
 #oplevelser-section .title-line {
-    width: 40%;
-    height: 2px;
-    background-color: #fff;
-    margin: 5px auto 25px auto;;
+	width: 40%;
+	height: 2px;
+	background-color: #fff;
+	margin: 5px auto 25px auto;
+	;
 }
 
 #oplevelser-section p {
@@ -143,8 +142,6 @@ display: block;
 	font-size: 1.25rem;
 	font-weight: 100;
 }
-
-
 
 .flex-billeder {
 	display: flex;
@@ -209,10 +206,11 @@ display: block;
 }
 
 #maps-section .title-line {
-    width: 30%;
-    height: 2px;
-    background-color: #2F361F;
-    margin: 5px auto 25px auto;;
+	width: 30%;
+	height: 2px;
+	background-color: #2F361F;
+	margin: 5px auto 25px auto;
+	;
 }
 
 #maps-section p {
@@ -225,17 +223,17 @@ display: block;
 #maps-section #map {
 	display: block;
 	top: 50px;
-	height: 500px;  
+	height: 500px;
 	width: 40%;
 	margin: 0 auto 2.5vw auto;
 	border: 1px solid #dddddd;
-  }
+}
 
-  /* Maps Section endpoint */
+/* Maps Section endpoint */
 
-  /* Transport Section startpoint */
+/* Transport Section startpoint */
 
-  .info-transport {
+.info-transport {
 	width: 100%;
 	height: auto;
 	margin: 7.5vw auto 0 auto;
@@ -243,7 +241,7 @@ display: block;
 	background-color: #8b9f43;
 	text-align: center;
 	color: #000;
-  }
+}
 
 .transport-text h1 {
 	padding: 2.5vw 0 0 0;
@@ -253,9 +251,9 @@ display: block;
 
 .transport-text .title-line {
 	width: 40%;
-    height: 2px;
-    background-color: #2F361F;
-    margin: 5px auto 25px auto;
+	height: 2px;
+	background-color: #2F361F;
+	margin: 5px auto 25px auto;
 }
 
 .transport-text p {
@@ -298,12 +296,13 @@ display: block;
 /* Transport Section endpoint */
 
 /* INSTAGRAM styling startpoint*/
+
 #instagram-testerbox {
 	width: 350px;
 	height: auto;
 	margin: 0 5vw 0 0;
-
 }
+
 /* INSTAGRAM styling endpoint */
 
 /* Følg Os Section startpoint */
@@ -319,10 +318,10 @@ display: block;
 }
 
 #folg-os-section .title-line {
-    width: 50%;
-    height: 2px;
-    background-color: #2F361F;
-    margin: 5px auto 25px auto;
+	width: 50%;
+	height: 2px;
+	background-color: #2F361F;
+	margin: 5px auto 25px auto;
 }
 
 .folg-os-h1 {
@@ -357,10 +356,56 @@ display: block;
 /* Følg Os Section endpoint */
 
 /* Media Queries below - Tilpasning til Mobil- og Tabeletversion */
-@media screen and (max-width: 1050px) {
+
+@media screen and (max-width: 1090px) {
 	#hero-section h1 {
 		line-height: initial;
 		word-spacing: initial;
 	}
+	.billeder .cykel, .billeder .jazz, .billeder .historie {
+		width: 350px;
+		height: 280px;
+		margin: 30px 10px 0px 10px;
+	}
+	.flex-billeder {
+		flex-wrap: wrap;
+	}
+	#maps-section #map {
+		top: 25px;
+		height: 300px;
+		width: 90%;
+	}
+}
 
+@media screen and (max-width: 750px) {
+	#hero-section, #hero-section .hero-container {
+		height: 300px;
+	}
+	#hero-section h1 {
+		transform: translate(-50%, -200%);
+	}
+	#oplevelser-section {
+		padding: 2.5vw 0vw;
+	}
+	.intro-text p {
+		font-size: 1.25rem;
+	}
+	.intro-logo {
+		display: none;
+	}
+	.intro-text {
+		width: 100%;
+		padding-top: 30px;
+	}
+	.billeder .cykel, .billeder .jazz, .billeder .historie {
+		width: 350px;
+		height: 215px;
+	}
+
+	#maps-section #map {
+		top: 25px;
+		height: 300px;
+		width: 90%;
+	}
+	
 }
