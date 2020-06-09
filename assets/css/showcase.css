@@ -1,8 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
 
-
-
 header .hero-all-container {
     height: 404px;
     overflow: hidden;
@@ -52,8 +50,6 @@ header .hero-all-container {
     color: #2F361F;
 }
 
-
-
 .menu-container {
     min-height: 600px;
     /*background-color: black;*/
@@ -76,8 +72,6 @@ header .hero-all-container {
     display: none;
     margin: 0 auto 20px 0;
 }
-
-
 
 .overflow {
     overflow: auto;
@@ -106,8 +100,8 @@ header .hero-all-container {
     left: 0;
     height: 40px;
     width: 40px;
-    z-index: 2; /* foran .zoom transition */
-    
+    z-index: 2;
+    /* foran .zoom transition */
 }
 
 .menu-container .menuOptions p {
@@ -120,14 +114,14 @@ header .hero-all-container {
     height: 300px;
     width: 270px;
     background-color: white;
-    position: relative; /*så numbIcon ikke er bagerst*/
+    position: relative;
+    /*så numbIcon ikke er bagerst*/
     top: 0;
 }
 
 .zoom:hover {
     border: #ee5541 solid 1px;
     transform: scale(1.02);
-    
     /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
@@ -165,10 +159,10 @@ header .hero-all-container {
     height: 600px;
     width: 38.5vw;
     background-color: blue;
-    
 }
 
 /* --- STICKY MAP CLASS START! ---*/
+
 #mapSticky {
     padding-left: 50px;
 }
@@ -190,8 +184,6 @@ header .hero-all-container {
 #info-section .info-container {
     height: auto;
 }
-
-
 
 /* IKONER */
 
@@ -216,30 +208,44 @@ header .hero-all-container {
     .title-grid-item2 {
         grid-column: 7/13;
     }
-
     .menu-container .filter-btn {
         font-size: 1.5rem;
         width: 90px;
     }
-
     .info-grid-item1 {
-        
         height: auto;
     }
 
-    
+    #info-section .info-container .info-grid-item2 {
+        grid-column: 4/7;
+        grid-row: 2/3;
+    }
+    #info-section .info-container .info-grid-item3 {
+        grid-column: 8/11;
+        grid-row: 2/3;
+    }
+
 }
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1250px) {
+    #info-section .info-container .info-grid-item2 {
+        grid-column: 3/7;
+        grid-row: 2/3;
+    }
+    #info-section .info-container .info-grid-item3 {
+        grid-column: 9/11;
+        grid-row: 2/3;
+    }
+}
+    
 
+@media screen and (max-width: 1050px) {
     html {
         font-size: 14px;
     }
-
     header .hero-all-container {
         height: 250px;
     }
-
     .menu-container .menu-grid-item1 {
         grid-column: 2/4;
     }
@@ -260,25 +266,23 @@ header .hero-all-container {
     .flex-ikoner {
         flex-wrap: wrap;
     }
-
-    
     #info-section .info-container .info-grid-item1 {
-        grid-column: 4/13;
+        grid-column: 3/13;
     }
     #info-section .info-container .info-grid-item2 {
-        grid-column: 4/13;
+        grid-column: 3/13;
+        grid-row: 2/3;
     }
-    
+    #info-section .info-container .info-grid-item3 {
+        grid-column: 3/13;
+        grid-row: 3/4;
+    }
 }
 
 @media screen and (max-width: 750px) {
-
     html {
         font-size: 12px;
     }
-
-    
-
     .menu-container .menu-grid-item1 {
         grid-column: 2/15;
         margin: 0 auto;
@@ -286,7 +290,6 @@ header .hero-all-container {
     .menu-container .menu-grid-item1.overflow {
         overflow: none;
         height: auto;
-       
     }
     .menu-container .menu-grid-item2 {
         display: none;
@@ -297,7 +300,6 @@ header .hero-all-container {
     .title-grid-item2 {
         grid-column: 2/14;
     }
-
     #title-section {
         height: auto;
         margin-bottom: 50px;
@@ -305,18 +307,22 @@ header .hero-all-container {
     .flex {
         flex-wrap: wrap;
     }
-
     #info-section .info-container .info-grid-item1 {
-        grid-column: 2/15;
+        grid-column: 2/14;
     }
+   
     #info-section .info-container .info-grid-item2 {
-        grid-column: 5/12;
+        grid-column: 1/14;
+        grid-row: 2/3;
     }
-    .flex .billeder img {
+    #info-section .info-container .info-grid-item3 {
+        grid-column: 1/14;
+        grid-row: 3/4;
+    }
+    .billeder img {
         width: 320px;
         height: 220px;
         margin: 20px 10px 20px 10px;
         border: 5px solid #fff;
     }
 }
-

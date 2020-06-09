@@ -8,7 +8,13 @@ header .hero-all-container {
         height: 300px;
 }
 .info-grid-item2 {
-        grid-column: 6/12;
+        grid-column: 4/8;
+        grid-row: 2/3;
+        
+}
+
+.info-grid-item3 {
+        grid-column: 8/12;
         grid-row: 2/3;
 }
 
@@ -45,7 +51,10 @@ header .hero-all-container {
 	padding: 5px;
 	color: #fff;
 	font-size: 1.25rem;
-	font-weight: bold; 
+        font-weight: bold; 
+        display: block;
+width: 110px;
+margin: 0 auto;
 }
 
 #info-section a:hover {
@@ -60,7 +69,7 @@ header .hero-all-container {
 	justify-content: center;
 }
 
-.flex .billeder img {
+.billeder img {
 	width: 350px;
 	height: 280px;
         margin: 20px 10px 20px 10px;
@@ -69,6 +78,14 @@ header .hero-all-container {
 }
 
 @media screen and (max-width: 1050px) {
-
+        .info-grid-item2 {
+                grid-column: 2/4;
+                grid-row: 2/3;
+                
+        }
+        .info-grid-item3 {
+                grid-column: 9/13;
+                grid-row: 2/3;
+        }
         
     }
