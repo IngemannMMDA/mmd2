@@ -112,6 +112,26 @@ display: block;
 
 /* Intro Section endpoint */
 
+/* Auto Scroll Down Button */
+
+.main-scroll {
+	display: inline-block;
+	width: 150px;
+	padding: 5px;
+	text-align: center;
+	position: absolute;
+	/*background-color: #feffe9;*/
+	border-top-right-radius: 25px;
+	border-top-left-radius: 25px;
+	left: 50%;
+	top: 94%;
+	transform: translate(-50%, -50%);
+}
+
+.main-scroll a {
+	font-size: 35px;
+}
+
 /* Oplevelser Section startpoint */
 
 #oplevelser-section {
@@ -399,6 +419,13 @@ display: block;
 	#oplevelser-section {
 		padding: 2.5vw 0vw;
 	}
+
+	.main-scroll {
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+	}
+
 	.intro-text p {
 		font-size: 1.25rem;
 	}
@@ -439,5 +466,11 @@ display: block;
 @media screen and (max-width: 662px) {
 	#hero-section h1 {
 		transform: translate(-50%, -250%);
+	}
+
+	.main-scroll {
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
 	}
 }
