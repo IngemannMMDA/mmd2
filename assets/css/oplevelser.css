@@ -3,12 +3,12 @@ header .hero-all-container {
 }
 
 .info-grid-item1 {
-        grid-column: 5/12;
+        grid-column: 4/12;
         grid-row: 1/2;
         height: 300px;
 }
 .info-grid-item2 {
-        grid-column: 5/12;
+        grid-column: 6/12;
         grid-row: 2/3;
 }
 
