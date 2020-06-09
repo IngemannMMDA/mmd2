@@ -313,10 +313,10 @@ footer {
 }
 
 .intro-ikoner-big img { /* TIL store iconer */
-	background-color:#EE5541;
+	background-color:none;
 	border-radius: 100px;
 	margin: 10px;
-	width: 120px;
+	width: 200px;
 	text-align: center;
 }
 

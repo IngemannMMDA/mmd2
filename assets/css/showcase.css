@@ -36,7 +36,7 @@ header .hero-all-container {
 }
 
 .title-grid-item1 img {
-    transform: translate(0%, 50%);
+    transform: translate(-10%, 20%);
 }
 
 .title-grid-items h2 {
@@ -158,7 +158,7 @@ header .hero-all-container {
 .menu-container .menu-map {
     height: 600px;
     width: 38.5vw;
-    background-color: blue;
+    background-color: #e6e6e6;
 }
 
 /* --- STICKY MAP CLASS START! ---*/
@@ -255,7 +255,7 @@ header .hero-all-container {
     .menu-container .menu-map {
         height: 400px;
         width: 50.5vw;
-        background-color: blue;
+        
     }
     .title-grid-item1 {
         grid-column: 3/3;
