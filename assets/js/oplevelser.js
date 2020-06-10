@@ -130,6 +130,11 @@ function initMap() {
         type: 'sixth',
         info: "Femø Strand",
         content: '<div>Femø Strand</div>'
+      }, {
+        position: new google.maps.LatLng(54.94453, 11.4356236), // Femø Strand
+        type: 'seventh',
+        info: "Dybvig havn",
+        content: '<div>Femø Strand</div>'
       }
     ];
   
