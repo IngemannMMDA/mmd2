@@ -52,7 +52,7 @@ display: block;
 	overflow: hidden;
 	background-size: cover;
 	background-position: center;
-	background-image: url('/assets/images/Beach-1.jpg');
+	background-image: url(../images/Beach-1.jpg);
 }
 
 #hero-section h1 {
