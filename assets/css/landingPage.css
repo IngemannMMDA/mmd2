@@ -62,9 +62,9 @@ display: block;
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
-	font-size: 3rem;
+	font-size: 4rem;
 	font-weight: lighter;
-	line-height: .1vw;
+	/* line-height: .1vw; */
 	word-spacing: .25em;
 }
 
@@ -380,7 +380,7 @@ display: block;
 
 @media screen and (max-width: 1090px) {
 	#hero-section h1 {
-		line-height: initial;
+		
 		word-spacing: initial;
 	}
 	.billeder .cykel, .billeder .jazz, .billeder .historie {
@@ -413,7 +413,7 @@ display: block;
 		height: 300px;
 	}
 	#hero-section h1 {
-		transform: translate(-50%, -500%);
+		transform: translate(-50%, -250%);
 	}
 	#oplevelser-section {
 		padding: 2.5vw 0vw;
@@ -463,14 +463,22 @@ display: block;
 }
 
 @media screen and (max-width: 662px) {
-	#hero-section h1 {
-		transform: translate(-50%, -400%);
-		font-size: 1.4rem;
-	}
+	
 
 	.main-scroll {
 		left: 50%;
 		top: 50%;
 		transform: translate(-50%, -50%);
+	}
+}
+
+@media screen and (max-width: 442px) {
+	
+
+	#hero-section {
+		display: none;
+	}
+	.main-scroll {
+		display: none;
 	}
 }
