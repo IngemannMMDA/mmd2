@@ -30,7 +30,64 @@ header .hero-all-container {
     background-color: #ff7f6f;
 }
 
-.flex-billeder {
+.flex-faergerute {
+	display: flex;
+	flex-wrap: nowrap;
+	width: 100%;
+	height: auto;
+	margin: 3vw auto 0 auto;
+	background-color: #fff;
+	color: #2F361F;
+}
+
+.transport-billede {
+	background-image: url(../images/white-cruiser-ship-on-body-of-water-during-daytime-172920.jpg);
+	background-size: cover;
+	background-position: bottom;
+	width: 100%;
+}
+
+.title-grid-items .faerge-text {
+    width: 65%;
+	padding: 1.8vw;
+	text-align: left;
+}
+
+.title-grid-items .faerge-text h2 {
+	font-size: 1.875rem;
+    font-weight: 100;
+    text-align: left;
+}
+
+.title-grid-items .faerge-text p {
+	font-size: 1rem;
+    margin: 1vw 0 2vw 0;
+    text-align: left;
+}
+
+#title-section .showcase-title-container .btn {
+    width: 126px;
+    margin: 5px;
+	background-color: #ee5541;
+	border-radius: 5px;
+	padding: 5px;
+	color: #fff;
+	font-size: 1.25rem;
+	font-weight: bold;
+}
+
+#title-section .showcase-title-container .btn:hover {
+	background-color: #ff7f6f;
+	color: #fff;
+	cursor: pointer;
+}
+
+#title-section .showcase-title-container .btn:visited {
+	color: #fff;
+}
+
+
+/*.flex-billeder {
 	display: flex;
 	flex-wrap: nowrap;
 	width: auto;
@@ -47,4 +104,4 @@ header .hero-all-container {
 	background-size: cover;
 	background-position: center bottom;
 	background-repeat: no-repeat;
-}
+}*/
