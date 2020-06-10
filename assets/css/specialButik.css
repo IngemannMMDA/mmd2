@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 header .hero-all-container {
-    background-image: url('/assets/images/shoppingbags.jpg');
+    background-image: url(../images/shoppingbags.jpg);
 }
 
 

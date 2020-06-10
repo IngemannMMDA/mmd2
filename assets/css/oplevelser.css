@@ -1,5 +1,5 @@
 header .hero-all-container {
-        background-image: url('/assets/images/bicycles.jpg');
+        background-image: url(../images/bicycles.jpg);
 }
 
 .info-grid-item1 {

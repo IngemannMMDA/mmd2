@@ -224,33 +224,33 @@ a:hover {
 }
 
 .linjeV {
-	background-image: url(/assets/icons/linje/dekorativ_linje_farve_venstre.png);
+	background-image: url(../icons/linje/dekorativ_linje_farve_venstre.png);
 	height: 35px;
 }
 
 .linjeM {
-	background-image: url(/assets/icons/linje/dekorativ_linje_farve_midt.png);
+	background-image: url(../icons/linje/dekorativ_linje_farve_midt.png);
 	height: 35px;
 }
 
 .linjeH {
-	background-image: url(/assets/icons/linje/dekorativ_linje_farve_hoejre.png);
+	background-image: url(../icons/linje/dekorativ_linje_farve_hoejre.png);
 	height: 35px;
 }
 
 
 .linjeVHvid {
-	background-image: url(/assets/icons/linje/dekorativ_linje_hvid_venstre.png);
+	background-image: url(../icons/linje/dekorativ_linje_hvid_venstre.png);
 	height: 35px;
 }
 
 .linjeMHvid {
-	background-image: url(/assets/icons/linje/dekorativ_linje_hvid_midt.png);
+	background-image: url(../icons/linje/dekorativ_linje_hvid_midt.png);
 	height: 35px;
 }
 
 .linjeHHvid {
-	background-image: url(/assets/icons/linje/dekorativ_linje_hvid_hoejre.png);
+	background-image: url(../icons/linje/dekorativ_linje_hvid_hoejre.png);
 	height: 35px;
 }
 
