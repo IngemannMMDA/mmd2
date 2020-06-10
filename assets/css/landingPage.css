@@ -466,7 +466,8 @@ display: block;
 
 @media screen and (max-width: 662px) {
 	#hero-section h1 {
-		transform: translate(-50%, -250%);
+		transform: translate(-50%, -400%);
+		font-size: 1.4rem;
 	}
 
 	.main-scroll {
