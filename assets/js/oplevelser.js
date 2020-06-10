@@ -94,6 +94,9 @@ function initMap() {
       },
       seventh: {
         icon: 'assets/icons/numbers/marker7.png'
+      },
+      eigth: {
+        icon: 'assets/icons/numbers/marker8.png'
       }
     };
   
@@ -121,20 +124,25 @@ function initMap() {
         info: "kajakhus",
         content: '<div>Fejø kajakhus</div>'
       }, {
-        position: new google.maps.LatLng(54.9460521, 11.4634828), // Slettern Strand
+        position: new google.maps.LatLng(54.9460521, 11.4634828), // Sletteren Strand
         type: 'fifth',
         info: "Slettern Strand",
-        content: '<div>Femø Strand</div>'
+        content: '<div>Fejø Strand</div>'
       }, {
         position: new google.maps.LatLng(54.9670317, 11.520059), // Femø Strand
         type: 'sixth',
         info: "Femø Strand",
         content: '<div>Femø Strand</div>'
       }, {
-        position: new google.maps.LatLng(54.94453, 11.4356236), // Femø Strand
+        position: new google.maps.LatLng(54.94453, 11.4356236), // Dybvig havn
         type: 'seventh',
         info: "Dybvig havn",
-        content: '<div>Femø Strand</div>'
+        content: '<div>Dybvig havn</div>'
+      }, {
+        position: new google.maps.LatLng(54.9514231, 11.4199642), // Stutteri Marienlund
+        type: 'eigth',
+        info: "Stutteri Marienlund",
+        content: '<div>Stutteri Marienlund</div>'
       }
     ];
   
