@@ -151,13 +151,13 @@ display: block;
 	font-weight: 100;
 }
 
-#oplevelser-section .title-line {
+/* #oplevelser-section .title-line {
 	width: 40%;
 	height: 2px;
 	background-color: #fff;
 	margin: 5px auto 25px auto;
-	;
-}
+	
+} */
 
 #oplevelser-section p {
 	margin: 25px 0 25px 0;
@@ -229,8 +229,7 @@ display: block;
 
 #maps-section .title-line {
 	width: 30%;
-	height: 2px;
-	background-color: #2F361F;
+
 	margin: 5px auto 25px auto;
 	;
 }
@@ -273,8 +272,7 @@ display: block;
 
 .transport-text .title-line {
 	width: 40%;
-	height: 2px;
-	background-color: #fff;
+	
 	margin: 5px auto 25px auto;
 }
 
@@ -330,12 +328,12 @@ display: block;
 	color: #2F361F;
 }
 
-#folg-os-section .title-line {
+/* #folg-os-section .title-line {
 	width: 50%;
 	height: 2px;
 	background-color: #2F361F;
 	margin: 5px auto 25px auto;
-}
+} */
 
 .folg-os-h1 {
 	padding: 2.5vw 0 2.5vw 0;
@@ -372,7 +370,7 @@ display: block;
 }
 
 #folg-os-section .title-line {
-	width: 50%;
+	width: 45%;
 	margin: 0 auto 20px;
 }
 

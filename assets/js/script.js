@@ -78,13 +78,13 @@ function renderWeather(data) { // starter Render funktionen. Alt bliver renderet
 
 
 
-function filterSelection(c) {
-  var x, i;
-  x = document.getElementsByClassName("menuOptions");
-  if (c == "alle") c = "";
-  for (i = 0; i < x.length; i++) {
-    removeClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) addClass(x[i], "show");
+function filterSelection(KnapParameter) {
+  var options, i;
+  options = document.getElementsByClassName("menuOptions");
+  if (KnapParameter == "alle") KnapParameter = "";
+  for (i = 0; i < options.length; i++) {
+    removeClass(options[i], "show");
+    if (options[i].className.indexOf(KnapParameter) > -1) addClass(options[i], "show");
   }
 
 }

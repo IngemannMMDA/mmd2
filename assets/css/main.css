@@ -170,8 +170,8 @@ a:hover {
 .nav-container .nav-grid-item1 a img {
 	max-height: 96px;
 	margin-top: -30px;
-	background-color: #fff;
-	border-radius: 50%;
+	min-height: 70px;
+	
 }
 
 .nav-container .nav-grid-items {

@@ -20,7 +20,7 @@ function initMap() {
     var map = new google.maps.Map(document.getElementById('map'), {
       zoom: 11.60, // Hvor meget kortet er zoomet ind
       center: mapLocation,
-      draggable: true, // pga iconer skal bør den være true
+      draggable: true, // pga iconer bør den være true
       disableDefaultUI: true,
       zoomControl: true,
   
@@ -106,22 +106,22 @@ function initMap() {
         position: new google.maps.LatLng(54.8978138, 11.49466), // Det gamle mejeri
         type: 'First',
         info: "Det gamle mejeri",
-        content: '<div>Hello wrold this is content for møllen</div>'
+        content: '<div>Det gamle mejeri </div>'
         }, {
         position: new google.maps.LatLng(54.8932775, 11.5021803), // Minihuse på Askø
         type: 'second',
         info: "Minihuse på Askø",
-        content: '<div>lerbakkevej</div>'
+        content: '<div>Minihuse på Askø</div>'
       }, {
         position: new google.maps.LatLng(54.973511, 11.5567933), // Femø camping
         type: 'third',
         info: "Fasangården telt og naturplads",
-        content: '<div>Fejø kajakhus</div>'
+        content: '<div>Fasangården telt og naturplads</div>'
       }, {
         position: new google.maps.LatLng(54.9811568, 11.5330299), // Femø Bed & Breakfast
         type: 'forth',
         info: "Femø Bed & Breakfast",
-        content: '<div>Femø Strand</div>'
+        content: '<div>Femø Bed & Breakfast</div>'
       }
     ];
   
@@ -151,17 +151,17 @@ function initMap() {
     document.getElementById("fejø-btn").addEventListener("click", function () {
       console.log("changing to Fejø");
       mapLocation = map.setCenter(new google.maps.LatLng(54.9453898, 11.3998485));
-      changeMarkerPosition(fejø);
-      onlyThis();
+      // changeMarkerPosition(fejø);
       
-    
+      
+
     });
   
     document.getElementById("femø-btn").addEventListener("click", function () {
       console.log("changing to Femø");
       mapLocation = map.setCenter(new google.maps.LatLng(54.9731883, 11.5328826));
-      changeMarkerPosition(femø);
-      onlyThis();
+      // changeMarkerPosition(femø);
+      
       
     });
       
@@ -169,15 +169,15 @@ function initMap() {
     document.getElementById("askø-btn").addEventListener("click", function () {
       console.log("changing to Askø");
       mapLocation = map.setCenter(new google.maps.LatLng(54.8932062, 11.4891612));
-      changeMarkerPosition(askø);
-      onlyThis();
+      // changeMarkerPosition(askø);
+      
     });
   
     document.getElementById("alle-btn").addEventListener("click", function () {
       console.log("changing to Alle");
       mapLocation = map.setCenter(new google.maps.LatLng(54.932620, 11.483123));
-      changeMarkerPosition(alle);
-      onlyThis();
+      // changeMarkerPosition(alle);
+      
     });
   
     function changeMarkerPosition(Theposition) { // Flytter markeren til den specifikke ø.
