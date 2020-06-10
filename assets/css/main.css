@@ -66,8 +66,6 @@ a {
 	text-decoration-thickness: 2px;
 }
 
-
-
 a:visited {
 	color: #d85448;
 }
@@ -117,7 +115,6 @@ a:hover {
 	display: grid;
 	grid-column-gap: auto;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-	
 	grid-column-gap: 16px;
 }
 
@@ -229,19 +226,16 @@ a:hover {
 .linjeV {
 	background-image: url(/assets/icons/linje/dekorativ_linje_farve_venstre.png);
 	height: 35px;
-	
 }
 
 .linjeM {
 	background-image: url(/assets/icons/linje/dekorativ_linje_farve_midt.png);
 	height: 35px;
-	
 }
 
 .linjeH {
 	background-image: url(/assets/icons/linje/dekorativ_linje_farve_hoejre.png);
 	height: 35px;
-	
 }
 
 /* Main grid endpoint */
@@ -261,21 +255,46 @@ footer {
 }
 
 .left-side-footer {
-	width: 50%;
+	width: 28%;
 	padding: 15px 0 0 15px;
 }
 
+.left-side-footer p {
+	font-size: 1rem;
+}
+.mid-side-footer {
+	width: 42%;
+	padding: 15px 0 0 15px;
+}
+
+
+
+.mid-side-footer .center {
+	width: 500px;
+	margin: 0 auto;
+}
+
+.mid-side-footer .center a {
+	display: inline-block;
+    padding: 5px;
+    width: 96px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
 .right-side-footer {
-	width: 50%;
+	width: 30%;
 	padding: 15px 15px 0 0;
 }
 
 .right-side-footer p {
 	float: right;
+	font-size: 1rem;
 }
 
 .right-side-footer a {
-	margin: 0 0 0 50px;
+	margin: 0 0 0 20px;
 	float: right;
 	color: #000;
 }
@@ -311,14 +330,14 @@ footer {
 	margin: 0 auto;
 }
 
-.intro-ikoner-big img { /* TIL store iconer */
-	background-color:none;
+.intro-ikoner-big img {
+	/* TIL store iconer */
+	background-color: none;
 	border-radius: 100px;
 	margin: 10px;
 	width: 250px;
 	text-align: center;
 }
-
 
 .showcase-title-container .intro-ikoner img {
 	width: 140px;
@@ -336,15 +355,13 @@ footer {
 
 .displayBlock {
 	display: block;
-	
 }
 
 .iconHover-background {
-	background-color:#EE5541;
+	background-color: #EE5541;
 	border-radius: 100px;
 	margin: 10px;
 }
-
 
 .iconHover:hover .displayNone {
 	display: block;
@@ -352,18 +369,15 @@ footer {
 
 .iconHover:hover .displayBlock {
 	display: none;
-	
 }
 
 .intro-ikoner .iconHover img:hover {
-    padding: 10px;
+	padding: 10px;
 }
 
 a.iconHover:hover img {
 	padding: 10px;
 }
-    
-
 
 /* Gif ON / OFF slut*/
 
@@ -375,7 +389,6 @@ a.iconHover:hover img {
 	.nav-grid-items {
 		font-size: 1rem;
 	}
-	
 }
 
 @media screen and (max-width: 1050px) {
@@ -391,7 +404,6 @@ a.iconHover:hover img {
 		grid-row: 1/2;
 		padding-top: 40px;
 	}
-
 	#vejrAPI .temp {
 		width: auto;
 	}
@@ -411,6 +423,20 @@ a.iconHover:hover img {
 	.flex {
 		flex-wrap: wrap;
 	}
+	.left-side-footer {
+		width: 18%;
+		padding: 15px 0 0 15px;
+	}
+	.mid-side-footer {
+		width: 52%;
+	}
+	
+	.mid-side-footer .center a {
+		
+		padding: 4px;
+		width: 75px;
+	}
+	
 }
 
 @media screen and (max-width: 750px) {
@@ -461,6 +487,23 @@ a.iconHover:hover img {
 	#title-section {
 		height: auto;
 		margin-bottom: 50px;
+	}
+	.left-side-footer {
+		width: 40%;
+	
+	}
+
+	.right-side-footer {
+		width: 60%;
+	
+	}
+	.mid-side-footer {
+		display: none;
+		
+	}
+
+	.right-side-footer a {
+		margin: 0 0 0 10px;
 	}
 }
 
