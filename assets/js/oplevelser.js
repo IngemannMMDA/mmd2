@@ -75,25 +75,25 @@ function initMap() {
   
     var icons = {
       First: {
-        icon: '/assets/icons/numbers/marker1.png'
+        icon: 'assets/icons/numbers/marker1.png'
       },
       second: {
-        icon: '/assets/icons/numbers/marker2.png'
+        icon: 'assets/icons/numbers/marker2.png'
       },
       third: {
-        icon: '/assets/icons/numbers/marker3.png'
+        icon: 'assets/icons/numbers/marker3.png'
       },
       forth: {
-        icon: '/assets/icons/numbers/marker4.png'
+        icon: 'assets/icons/numbers/marker4.png'
       },
       fifth: {
-        icon: '/assets/icons/numbers/marker5.png'
+        icon: 'assets/icons/numbers/marker5.png'
       },
       sixth: {
-        icon: '/assets/icons/numbers/marker6.png'
+        icon: 'assets/icons/numbers/marker6.png'
       },
       seventh: {
-        icon: '/assets/icons/numbers/marker7.png'
+        icon: 'assets/icons/numbers/marker7.png'
       }
     };
   
