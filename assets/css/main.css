@@ -218,7 +218,7 @@ a:hover {
 	grid-template-columns: 65px auto 65px;
 }
 
-.linjeV, .linjeM, .linjeH {
+.linjeV, .linjeM, .linjeH, .linjeVHvid, .linjeMHvid, .linjeHHvid {
 	display: inline-block;
 	float: left;
 }
@@ -235,6 +235,22 @@ a:hover {
 
 .linjeH {
 	background-image: url(/assets/icons/linje/dekorativ_linje_farve_hoejre.png);
+	height: 35px;
+}
+
+
+.linjeVHvid {
+	background-image: url(/assets/icons/linje/dekorativ_linje_hvid_venstre.png);
+	height: 35px;
+}
+
+.linjeMHvid {
+	background-image: url(/assets/icons/linje/dekorativ_linje_hvid_midt.png);
+	height: 35px;
+}
+
+.linjeHHvid {
+	background-image: url(/assets/icons/linje/dekorativ_linje_hvid_hoejre.png);
 	height: 35px;
 }
 
