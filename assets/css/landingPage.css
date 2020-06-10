@@ -119,11 +119,11 @@ display: block;
 	width: 55px;
 	padding: 5px;
 	text-align: center;
-	position: absolute;
+	position: relative;
 	background-color: #feffe9;
 	border-radius: 5px;
 	left: 50%;
-	top: 94%;
+	top: 50%;
 	transform: translate(-50%, -50%);
 }
 
