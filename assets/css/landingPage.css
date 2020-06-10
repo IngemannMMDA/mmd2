@@ -81,7 +81,7 @@ display: block;
 
 .intro-logo {
 	display: block;
-	background-image: url(../images/logoPlaceholder.png);
+	background-image: url(../icons/aeble_logo.svg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 15vw;
