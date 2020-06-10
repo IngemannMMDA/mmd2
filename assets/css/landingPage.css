@@ -99,11 +99,13 @@ display: block;
 	font-size: 2.1875rem;
 	font-weight: lighter;
 	margin: 0 0 20px 0;
+	color: #2F361F;
 }
 
 .intro-text p {
 	font-size: 1.375rem;
 	margin: 15px 0;
+	color: #2F361F;
 }
 
 .runde-ikoner {
