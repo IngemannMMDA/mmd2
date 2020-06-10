@@ -60,7 +60,7 @@ display: block;
 	text-shadow: 2px 2px 5px #000;
 	position: absolute;
 	left: 50%;
-	top: 50%;
+	top: 40%;
 	transform: translate(-50%, -50%);
 	font-size: 3rem;
 	font-weight: lighter;
@@ -92,7 +92,7 @@ display: block;
 .intro-text {
 	display: block;
 	width: 50%;
-	padding: 5vw;
+	padding: 5vw 5vw 5vw 0;
 }
 
 .intro-text h1 {
