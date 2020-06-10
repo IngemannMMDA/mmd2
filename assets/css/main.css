@@ -60,12 +60,6 @@ a {
 	color: #d85448;
 }
 
-.line {
-	/* The CURRENT PAGE has this Class */
-	text-decoration: underline solid #d85448;
-	text-decoration-thickness: 2px;
-}
-
 a:visited {
 	color: #d85448;
 }
@@ -105,11 +99,13 @@ a:hover {
 
 /* Links styleing endpoint */
 
-/*-webkit-filter: saturate(8); */
+.line {
+	/* The CURRENT PAGE has this Class */
+	text-decoration: underline solid #d85448;
+	text-decoration-thickness: 2px;
+}
 
-/* filter: saturate(8); */
-
-/* Main grid startpoint */
+/* Main grid */
 
 .grid {
 	display: grid;
@@ -117,6 +113,8 @@ a:hover {
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 	grid-column-gap: 16px;
 }
+
+/* NAV grid startpoint */
 
 .navgrid {
 	display: grid;
@@ -171,7 +169,6 @@ a:hover {
 	max-height: 96px;
 	margin-top: -30px;
 	min-height: 70px;
-	
 }
 
 .nav-container .nav-grid-items {
@@ -208,6 +205,8 @@ a:hover {
 	margin-top: -14px;
 }
 
+/* NAV grid Endpoint */
+
 .title-line {
 	/* width: 100%;
 	height: 50px;
@@ -238,7 +237,6 @@ a:hover {
 	height: 35px;
 }
 
-
 .linjeVHvid {
 	background-image: url(../icons/linje/dekorativ_linje_hvid_venstre.png);
 	height: 35px;
@@ -253,8 +251,6 @@ a:hover {
 	background-image: url(../icons/linje/dekorativ_linje_hvid_hoejre.png);
 	height: 35px;
 }
-
-/* Main grid endpoint */
 
 /* Footer styling startpoint */
 
@@ -278,12 +274,11 @@ footer {
 .left-side-footer p {
 	font-size: 1rem;
 }
+
 .mid-side-footer {
 	width: 42%;
 	padding: 15px 0 0 15px;
 }
-
-
 
 .mid-side-footer .center {
 	width: 500px;
@@ -292,12 +287,11 @@ footer {
 
 .mid-side-footer .center a {
 	display: inline-block;
-    padding: 5px;
-    width: 96px;
-    margin: 0 auto;
-    text-align: center;
+	padding: 5px;
+	width: 96px;
+	margin: 0 auto;
+	text-align: center;
 }
-
 
 .right-side-footer {
 	width: 30%;
@@ -322,6 +316,10 @@ footer {
 .fab {
 	font-size: 25px;
 }
+
+/* Footer styling endpoint */
+
+/* Ikoner styling startpoint */
 
 .flex-ikoner {
 	display: flex;
@@ -397,7 +395,7 @@ a.iconHover:hover img {
 
 /* Gif ON / OFF slut*/
 
-/* Footer styling endpoint */
+/* Ikoner styling endpointpoint */
 
 /* Media Queries */
 
@@ -446,13 +444,10 @@ a.iconHover:hover img {
 	.mid-side-footer {
 		width: 52%;
 	}
-	
 	.mid-side-footer .center a {
-		
 		padding: 4px;
 		width: 75px;
 	}
-	
 }
 
 @media screen and (max-width: 750px) {
@@ -506,18 +501,13 @@ a.iconHover:hover img {
 	}
 	.left-side-footer {
 		width: 40%;
-	
 	}
-
 	.right-side-footer {
 		width: 60%;
-	
 	}
 	.mid-side-footer {
 		display: none;
-		
 	}
-
 	.right-side-footer a {
 		margin: 0 0 0 10px;
 	}

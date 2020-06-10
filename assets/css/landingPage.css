@@ -33,20 +33,6 @@
 	background-color: lightcoral;
 }
 
-/*
-#hero-section .hero-container {
-height: 700px;
-width: 100%;
-}
-
-#hero-section .hero-container img {
-max-height: 100%;
-max-width: 100%;
-display: block;
-}
-
-*/
-
 #hero-section .hero-container {
 	height: 85vh;
 	overflow: hidden;
@@ -151,14 +137,6 @@ display: block;
 	font-weight: 100;
 }
 
-/* #oplevelser-section .title-line {
-	width: 40%;
-	height: 2px;
-	background-color: #fff;
-	margin: 5px auto 25px auto;
-	
-} */
-
 #oplevelser-section p {
 	margin: 25px 0 25px 0;
 	font-size: 1.25rem;
@@ -229,7 +207,6 @@ display: block;
 
 #maps-section .title-line {
 	width: 30%;
-
 	margin: 5px auto 25px auto;
 	;
 }
@@ -272,7 +249,6 @@ display: block;
 
 .transport-text .title-line {
 	width: 40%;
-	
 	margin: 5px auto 25px auto;
 }
 
@@ -328,13 +304,6 @@ display: block;
 	color: #2F361F;
 }
 
-/* #folg-os-section .title-line {
-	width: 50%;
-	height: 2px;
-	background-color: #2F361F;
-	margin: 5px auto 25px auto;
-} */
-
 .folg-os-h1 {
 	padding: 2.5vw 0 2.5vw 0;
 	font-size: 1.875rem;
@@ -380,7 +349,6 @@ display: block;
 
 @media screen and (max-width: 1090px) {
 	#hero-section h1 {
-		
 		word-spacing: initial;
 	}
 	.billeder .cykel, .billeder .jazz, .billeder .historie {
@@ -418,13 +386,11 @@ display: block;
 	#oplevelser-section {
 		padding: 2.5vw 0vw;
 	}
-
 	.main-scroll {
 		left: 50%;
 		top: 50%;
 		transform: translate(-50%, -50%);
 	}
-
 	.intro-text p {
 		font-size: 1.25rem;
 	}
@@ -457,7 +423,6 @@ display: block;
 		width: 326px;
 		margin: 20px auto;
 	}
-
 	.folg-os-text p {
 		padding: 0;
 		line-height: 1.5;
@@ -465,8 +430,6 @@ display: block;
 }
 
 @media screen and (max-width: 662px) {
-	
-
 	.main-scroll {
 		left: 50%;
 		top: 50%;
@@ -475,8 +438,6 @@ display: block;
 }
 
 @media screen and (max-width: 442px) {
-	
-
 	#hero-section {
 		display: none;
 	}

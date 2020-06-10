@@ -1,33 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+
 header .hero-all-container {
-    height: auto;
-    overflow: hidden;
-    background-size: cover;
-    background-position: center;
-    background-image: url(../images/white-crewship-near-island-under-clear-sky-at-daytime-164180.jpg);
+	height: auto;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center;
+	background-image: url(../images/white-crewship-near-island-under-clear-sky-at-daytime-164180.jpg);
 }
 
 #title-section {
-    display: block;
-    width: 100%;
-    height: auto;
-    margin-bottom: 10vw;
+	display: block;
+	width: 100%;
+	height: auto;
+	margin-bottom: 10vw;
 }
 
 #title-section .showcase-title-container .btn {
-    display: block;
-    width: 104px;
-    height: auto;
-    background-color: #ee5541;
-    border-radius: 5px;
-    margin: 0 auto;
-    padding: 5px;
-    color: #fff;
-    font-size: 1.25rem;
-    font-weight: bold; 
+	display: block;
+	width: 104px;
+	height: auto;
+	background-color: #ee5541;
+	border-radius: 5px;
+	margin: 0 auto;
+	padding: 5px;
+	color: #fff;
+	font-size: 1.25rem;
+	font-weight: bold;
 }
 
 #title-section .btn:hover {
-    background-color: #ff7f6f;
+	background-color: #ff7f6f;
 }
 
 .flex-faergerute {
@@ -48,26 +51,26 @@ header .hero-all-container {
 }
 
 .title-grid-items .faerge-text {
-    width: 65%;
+	width: 65%;
 	padding: 1.8vw;
 	text-align: left;
 }
 
 .title-grid-items .faerge-text h2 {
 	font-size: 1.875rem;
-    font-weight: 100;
-    text-align: left;
+	font-weight: 100;
+	text-align: left;
 }
 
 .title-grid-items .faerge-text p {
 	font-size: 1rem;
-    margin: 1vw 0 2vw 0;
-    text-align: left;
+	margin: 1vw 0 2vw 0;
+	text-align: left;
 }
 
 #title-section .showcase-title-container .btn {
-    width: 126px;
-    margin: 5px;
+	width: 126px;
+	margin: 5px;
 	background-color: #ee5541;
 	border-radius: 5px;
 	padding: 5px;
@@ -85,23 +88,3 @@ header .hero-all-container {
 #title-section .showcase-title-container .btn:visited {
 	color: #fff;
 }
-
-
-/*.flex-billeder {
-	display: flex;
-	flex-wrap: nowrap;
-	width: auto;
-	height: auto;
-	justify-content: center;
-}
-
-.billeder .sejlplan {
-	width: 350px;
-	height: 280px;
-	margin: 50px 10px 50px 10px;
-	border: 5px solid #fff;
-	background-image: url(../images/white-cruiser-ship-on-body-of-water-during-daytime-172920.jpg);
-	background-size: cover;
-	background-position: center bottom;
-	background-repeat: no-repeat;
-}*/

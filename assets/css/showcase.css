@@ -13,6 +13,8 @@ header .hero-all-container {
     margin: 0 0 0 0;
 }
 
+/* Title Section startpoint */
+
 #title-section {
     height: 536px;
     padding-top: 70px;
@@ -49,6 +51,9 @@ header .hero-all-container {
     line-height: 1.15;
     color: #2F361F;
 }
+/* Title Section Endpoint */
+
+/* Menu startpoint */
 
 .menu-container {
     min-height: 600px;
@@ -72,6 +77,8 @@ header .hero-all-container {
     display: none;
     margin: 0 auto 20px 0;
 }
+
+
 
 .overflow {
     overflow: auto;
@@ -161,6 +168,8 @@ header .hero-all-container {
     width: 38.5vw;
     background-color: #e6e6e6;
 }
+
+/* menu Endpoint */
 
 /* --- STICKY MAP CLASS START! ---*/
 

@@ -1,33 +1,18 @@
 // JavaScript Document
 
-// api.openweathermap.org/data/2.5/weather?q=london&appid=e352705e1d58913e65b917cc9d5164b9
-const WPurl = 'api.openweathermap.org/data/2.5/weather?q=aalborg&appid='; // Andreas wather api url
+const WPurl = 'api.openweathermap.org/data/2.5/weather?lat=54&lon=11&units=metric&appid='; // Andreas wather api url
 const WPkey = 'e352705e1d58913e65b917cc9d5164b9'; // Andreas weather api key
-
-
-
 
 loadPage();
 
-
 function loadPage() {
-  // turn on the spinner
 
-  console.log("Hello?");
-  getData();
+  console.log("Script loaded");
+  getData();  // henter openweathermap.org DATA
   filterSelection("alle");
   filterButtons();
-   // henter openweathermap.org DATA
-  
-
-  // Showcase sidernes map scroll
-  
-
-
+ 
 }
-
-
-
 
 function getData() {
   const xhttp = new XMLHttpRequest();
@@ -36,28 +21,15 @@ function getData() {
       const data = JSON.parse(this.responseText);
       console.log(data);
 
-
-      // console.log(data.explanation);
-      // fører koden videre til en function ved navn renderInfoWP
-      //renderInfo(data);
+      // fører koden videre til en function ved navn renderWeather
       renderWeather(data);
     }
   }
   // xhttp.open('GET', `${WPurl}posts/?tags=${postInfoId}`, true);
-  xhttp.open('GET', `https://api.openweathermap.org/data/2.5/weather?lat=54&lon=11&units=metric&appid=e352705e1d58913e65b917cc9d5164b9`, true);
+  xhttp.open('GET', `https://${WPurl}${WPkey}`, true);
   //xhttp.open('GET', `${WPurl}${WPkey}`, true);
   xhttp.send();
 }
-
-
-
-
-
-//  xhttp.open('GET', `${WPurl}?api_key=${WPkey}`, true);
-//function renderInfo(data){ // billede
-
-// <img src="https://openweathermap.org/img/w/${data.weather.icon}@2x.png">
-
 
 function renderWeather(data) { // starter Render funktionen. Alt bliver renderet i querySelector elementet.
   document.querySelector('#vejrAPI').innerHTML = `
@@ -70,13 +42,6 @@ function renderWeather(data) { // starter Render funktionen. Alt bliver renderet
     `;
   // Math.round() Runder tallet op.
 }
-//initmap
-
-//initmap slut
-
-
-
-
 
 function filterSelection(KnapParameter) {
   var options, i;
@@ -121,23 +86,3 @@ function filterButtons() {
     });
   }
 }
-
-
-
-
-// function changeMarkerPosition(marker) {
-//   var mapPointBox = document.getElementById("menu-filter-Id");
-// var knapper = mapPointBox.getElementsByClassName("filter-btn");
-// knapper[i].addEventListener("click", function(){
-//   var latlng = new google.maps.LatLng(40.748774, -73.985763);
-//   marker.setPosition(latlng);
-// }
-
-// function updatePosition() {
-//   latitude = parseInt(document.getElementById('latitude').value, 10);
-//   longtitude = parseInt(document.getElementById('longtitude').value, 10);
-//   myLatlng = new google.maps.LatLng(latitude, longtitude);
-//   marker.setPosition(myLatlng);
-//   map.setCenter(myLatlng);
-// }
-
