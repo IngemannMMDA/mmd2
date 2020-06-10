@@ -432,8 +432,8 @@ display: block;
 		display: none;
 	}
 	.intro-text {
-		width: 100%;
-		padding-top: 30px;
+		width: 90%;
+		padding: 30px;
 	}
 	.billeder .cykel, .billeder .jazz, .billeder .historie {
 		width: 350px;
@@ -451,9 +451,11 @@ display: block;
 	.faerge-text {
 		height: 150px;
 		text-align: center;
+		margin: 0 auto;
 	}
 	#instagram-testerbox {
-		width: 50%;
+		width: 326px;
+		margin: 20px auto;
 	}
 
 	.folg-os-text p {
