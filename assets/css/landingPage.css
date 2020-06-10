@@ -29,7 +29,7 @@
 /* Hero Section startpoint */
 
 #hero-section {
-	height: 700px;
+	height: 100vh;
 	background-color: lightcoral;
 }
 
@@ -48,7 +48,7 @@ display: block;
 */
 
 #hero-section .hero-container {
-	height: 715px;
+	height: 100vh;
 	overflow: hidden;
 	background-size: cover;
 	background-position: center;
