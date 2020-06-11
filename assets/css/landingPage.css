@@ -156,7 +156,7 @@
 	height: 280px;
 	margin: 50px 10px 75px 10px;
 	border: 5px solid #fff;
-	background-image: url(../images/nature-sunset-river-bicycle-17729.jpg);
+	background-image: url(../images/nature-sunset-river-bicycle-17729.jpg); /* Credits: from pexels.com */
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -167,7 +167,7 @@
 	height: 280px;
 	margin: 50px 10px 75px 10px;
 	border: 5px solid #fff;
-	background-image: url(../images/big-three-man-playing-drums-and-wind-instruments-in-front-of-1343331.jpg);
+	background-image: url(../images/big-three-man-playing-drums-and-wind-instruments-in-front-of-1343331.jpg); /* Credits: from pexels.com */
 	background-size: cover;
 	background-position: right;
 	background-repeat: no-repeat;
@@ -178,7 +178,7 @@
 	height: 280px;
 	margin: 50px 10px 75px 10px;
 	border: 5px solid #fff;
-	background-image: url(../images/photo-of-woman-riding-horse-near-tree-2540547.jpg);
+	background-image: url(../images/photo-of-woman-riding-horse-near-tree-2540547.jpg); /* Credits: from pexels.com */
 	background-size: cover;
 	background-position: left;
 	background-repeat: no-repeat;
@@ -269,7 +269,7 @@
 }
 
 .transport-billede {
-	background-image: url(../images/white-cruiser-ship-on-body-of-water-during-daytime-172920.jpg);
+	background-image: url(../images/white-cruiser-ship-on-body-of-water-during-daytime-172920.jpg); /* Credits: from pexels.com */
 	background-size: cover;
 	background-position: bottom;
 	width: 50%;

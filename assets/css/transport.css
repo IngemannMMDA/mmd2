@@ -6,7 +6,7 @@ header .hero-all-container {
 	overflow: hidden;
 	background-size: cover;
 	background-position: center;
-	background-image: url(../images/white-crewship-near-island-under-clear-sky-at-daytime-164180.jpg);
+	background-image: url(../images/white-crewship-near-island-under-clear-sky-at-daytime-164180.jpg); /*Credits: from pexels.com */
 }
 
 #title-section {
@@ -44,7 +44,7 @@ header .hero-all-container {
 }
 
 .transport-billede {
-	background-image: url(../images/white-cruiser-ship-on-body-of-water-during-daytime-172920.jpg);
+	background-image: url(../images/white-cruiser-ship-on-body-of-water-during-daytime-172920.jpg); /*Credits: from pexels.com */
 	background-size: cover;
 	background-position: bottom;
 	width: 100%;
