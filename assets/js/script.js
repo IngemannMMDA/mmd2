@@ -54,6 +54,7 @@ function filterSelection(KnapParameter) {
 
 }
 
+// Learned from W3Schools.com - start
 function addClass(element, name) {
   var i, arr1, arr2;
   arr1 = element.className.split(" ");
@@ -85,4 +86,5 @@ function filterButtons() {
       this.className += " active";
     });
   }
+  // Learned from W3Schools.com - end
 }
