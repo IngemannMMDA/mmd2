@@ -105,7 +105,7 @@ function initMap() {
   ];
 
   // skal loades i html'en der passer til og give en parameter som matcher det JSON der skal bruges oven over
-  function onlyThis() {
+  function onlyThis() { // Generere alle tallene
 
     for (var i = 0; i < featuresOplevelser.length; i++) {
       var oermarker = new google.maps.Marker({
@@ -118,7 +118,7 @@ function initMap() {
   }
 
   onlyThis();
-
+// ændre fokus
   document.getElementById("fejø-btn").addEventListener("click", function () {
     console.log("changing to Fejø");
     mapLocation = map.setCenter(new google.maps.LatLng(54.9453898, 11.3998485));
